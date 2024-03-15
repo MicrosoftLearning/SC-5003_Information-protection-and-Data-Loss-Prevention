@@ -1,7 +1,7 @@
 ---
 lab:
-    task: 'Create a sensitive information type'
-    exercise: 'Exercise 1- Create a sensitive information type'
+    task: 'Create a custom sensitive information type'
+    exercise: 'Exercise 1 - Create a custom sensitive information type'
 ---
 
 # Skilling tasks
@@ -31,3 +31,5 @@ Your task is to create a custom sensitive information type (SIT) that meets the 
 1. On the **Choose the recommended confidence level to show in compliance policies** page, leave the default select, then select **Next**.
 1. Review your settings, then select **Create**.
 1. On the **Your sensitive info type is created** page, select **Done**.
+
+You have now successfully created a custom sensitive information type (SIT) to improve the security and management of your company's unique employee ID numbers.
