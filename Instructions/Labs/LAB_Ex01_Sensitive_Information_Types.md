@@ -1,7 +1,7 @@
 ---
 lab:
-    title: 'Exercise 1 - Manage Sensitive Information Types'
-    module: 'Create a sensitive information type'
+    title: 'Create a sensitive information type'
+    module: 'Exercise 1- Create a sensitive information type'
 ---
 
 ## Task Objectives
