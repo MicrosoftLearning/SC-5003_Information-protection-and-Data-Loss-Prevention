@@ -70,7 +70,7 @@ By applying these labels correctly, you will help to ensure the safe management 
 1. Select **Next** and accept defaults until you reach the **Review your settings and finish** page select **Create label**.
 1. On the **Your sensitivity label was created** page, select **Don't create a policy yet**, then select **Done**.
 
-## Task 3 instructions - Publish a sublabel label
+## Task 3 instructions - Publish a sensitivity label
 
 1. On the **Labels** page, select the checkboxes next to the newly created **Internal** and the **Employee data (HR)** sublabel.
 1. On the **Choose sensitivity labels to publish** page, ensure both the Internal and Employee data (HR) labels are displayed under **Sensitivity labels to publish**, then select **Next**.
@@ -87,5 +87,3 @@ By applying these labels correctly, you will help to ensure the safe management 
 1. On the **New policy created** page select **Done**.
 
 You have now successfully created a sensitivity label to classify employee data for the HR department.
-
-</details>
