@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Create a sensitive information type'
+    task: 'Create a sensitive information type'
     exercise: 'Exercise 1- Create a sensitive information type'
 ---
 
