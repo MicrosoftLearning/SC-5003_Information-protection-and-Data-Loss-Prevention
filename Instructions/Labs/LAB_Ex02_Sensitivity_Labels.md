@@ -15,7 +15,7 @@ Test your skills by following the challenge before viewing the exercise instruct
 
 <br>
 <details>
-  <summary><h2>Challenge: Implement Sensitivity Labels for HR Department</summary>
+  <summary>Challenge: Implement Sensitivity Labels for HR Department</summary>
 
 **Objective**: Create and publish a sensitivity label to improve data protection in the HR department. Your task is to set up a main sensitivity label called _Internal_, with a sublabel under it called _Employee Data (HR)_. This classification system should follow these criteria to ensure effective data protection and compliance:
 
@@ -30,7 +30,7 @@ By applying these labels correctly, you will help to ensure the safe management 
 
 <br>
 <details>
-  <summary><h2>Exercise instructions</summary>
+  <summary>Exercise instructions</summary>
 
 ## Task 1 instructions - Create a sensitivity label
 
