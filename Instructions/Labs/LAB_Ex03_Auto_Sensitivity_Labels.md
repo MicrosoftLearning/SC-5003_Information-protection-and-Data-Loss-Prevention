@@ -1,7 +1,7 @@
 ---
 lab:
-    task: 'Create and publish a sensitivity label'
-    exercise: 'Exercise 2 - Create and publish a sensitivity label'
+    task: 'Create and assign an auto-labeling policy'
+    exercise: 'Exercise 3 - Create and assign an auto-labeling policy'
 ---
 
 # Skilling Tasks
@@ -11,9 +11,9 @@ Your task is to create and publish sensitivity labels within your organization t
 - **Create an _Internal_ sensitivity label**: Create a sensitivity label called _Internal_ to categorize all data that is only for internal use.
 - **Create _Employee Data (HR)_ sublabel**: Under the _Internal_ label, create a sublabel named _Employee Data (HR)_ dedicated to the Human Resources department's sensitive information.
 
-**Test your skills by following the challenge before viewing the exercise instructions.**
+### Test your skills by following the challenge before viewing the exercise instructions.
 
-## Challenge: Implement sensitivity labels for your HR department
+### Challenge: Implement Sensitivity Labels for HR Department
 
 **Objective**: Create and publish a sensitivity label to improve data protection in the HR department. Your task is to set up a main sensitivity label called _Internal_, with a sublabel under it called _Employee Data (HR)_. This classification system should follow these criteria to ensure effective data protection and compliance:
 
@@ -24,9 +24,9 @@ Your task is to create and publish sensitivity labels within your organization t
 
 By applying these labels correctly, you will help to ensure the safe management of confidential HR documents, in accordance with the organization's data protection objectives.
 
-## Exercise instructions
+### Exercise instructions
 
-## Task 1 - Create a sensitivity label
+## Task 1 instructions - Create a sensitivity label
 
 1. Navigate to the Microsoft Purview Compliance Portal.
 1. Expand **Information protection**, then select **Labels**.
@@ -44,7 +44,7 @@ By applying these labels correctly, you will help to ensure the safe management 
 1. Select **Next** and accept defaults until you reach the **Review your settings and finish** page select **Create label**.
 1. On the **Your sensitivity label was created** page, select **Don't create a policy yet**, then select **Done**.
 
-## Task 2 - Create a sublabel label
+## Task 2 instructions - Create a sublabel label
 
 1. On the Information protection page, highlight (without selecting) the newly created **Internal** label and select the vertical **...**
     ![Image of vertical dot menu](../Media/SensitivityLabelDotMenu.png)
