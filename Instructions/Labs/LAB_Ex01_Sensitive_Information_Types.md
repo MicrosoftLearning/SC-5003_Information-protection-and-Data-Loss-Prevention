@@ -4,14 +4,14 @@ lab:
     module: 'Exercise 1- Create a sensitive information type'
 ---
 
-## Task Objectives
+# Task Objectives
 
 Your task is to create a custom sensitive information type (SIT) that meets the required criteria:
 
 - **Custom regex pattern for employee ID**: Include a regex pattern that identifies your organization's unique employee ID configuration, which consists of 9 characters: 3 digits, a dash, followed by 5 letters (e.g., 123-abcde).
 - **Keyword list associated with employee IDs**: Incorporate a list of keywords that are commonly associated with employee IDs to enhance detection accuracy.
 
-### Task steps
+## Task steps
 
 1. Navigate to the Microsoft Purview Compliance Portal.
 1. Expand **Data classification** then select **Classifiers**.
