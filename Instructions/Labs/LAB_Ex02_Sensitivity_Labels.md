@@ -11,26 +11,20 @@ Your task is to create and publish sensitivity labels within your organization t
 - **Create an _Internal_ sensitivity label**: Create a sensitivity label called _Internal_ to categorize all data that is only for internal use.
 - **Create _Employee Data (HR)_ sublabel**: Under the _Internal_ label, create a sublabel named _Employee Data (HR)_ dedicated to the Human Resources department's sensitive information.
 
-Test your skills by following the challenge before viewing the exercise instructions.
+### Test your skills by following the challenge before viewing the exercise instructions.
 
-<br>
-<details>
-  <summary>Challenge: Implement Sensitivity Labels for HR Department</summary>
+### Challenge: Implement Sensitivity Labels for HR Department
 
-   **Objective**: Create and publish a sensitivity label to improve data protection in the HR department. Your task is to set up a main sensitivity label called _Internal_, with a sublabel under it called _Employee Data (HR)_. This classification system should follow these criteria to ensure effective data protection and compliance:
+**Objective**: Create and publish a sensitivity label to improve data protection in the HR department. Your task is to set up a main sensitivity label called _Internal_, with a sublabel under it called _Employee Data (HR)_. This classification system should follow these criteria to ensure effective data protection and compliance:
 
-   - The labels should permit access to any authenticated user, ensuring that only verified individuals can view the sensitive data.
-   - Facilitate offline access to the labeled data for a period of 14 days, supporting operational flexibility while maintaining security protocols.
-   - Set the user access to the labeled data to never expire, ensuring persistent protection of the information over time.
-   - Create a policy named _Internal HR employee data_ that requires users to provide a justification for removing a label or lowering it classification.
+- The labels should permit access to any authenticated user, ensuring that only verified individuals can view the sensitive data.
+- Facilitate offline access to the labeled data for a period of 14 days, supporting operational flexibility while maintaining security protocols.
+- Set the user access to the labeled data to never expire, ensuring persistent protection of the information over time.
+- Create a policy named _Internal HR employee data_ that requires users to provide a justification for removing a label or lowering it classification.
 
-   By applying these labels correctly, you will help to ensure the safe management of confidential HR documents, in accordance with the organization's data protection objectives.
+By applying these labels correctly, you will help to ensure the safe management of confidential HR documents, in accordance with the organization's data protection objectives.
 
-</details>
-
-<br>
-<details>
-  <summary>Exercise instructions</summary>
+### Exercise instructions
 
 ## Task 1 instructions - Create a sensitivity label
 
@@ -94,4 +88,4 @@ Test your skills by following the challenge before viewing the exercise instruct
 
 You have now successfully created a sensitivity label to classify employee data for the HR department.
 
-<details>
+</details>
