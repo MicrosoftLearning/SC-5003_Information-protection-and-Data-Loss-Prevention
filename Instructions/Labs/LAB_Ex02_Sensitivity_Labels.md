@@ -17,14 +17,14 @@ Test your skills by following the challenge before viewing the exercise instruct
 <details>
   <summary>Challenge: Implement Sensitivity Labels for HR Department</summary>
 
-**Objective**: Create and publish a sensitivity label to improve data protection in the HR department. Your task is to set up a main sensitivity label called _Internal_, with a sublabel under it called _Employee Data (HR)_. This classification system should follow these criteria to ensure effective data protection and compliance:
+   **Objective**: Create and publish a sensitivity label to improve data protection in the HR department. Your task is to set up a main sensitivity label called _Internal_, with a sublabel under it called _Employee Data (HR)_. This classification system should follow these criteria to ensure effective data protection and compliance:
 
-- The labels should permit access to any authenticated user, ensuring that only verified individuals can view the sensitive data.
-- Facilitate offline access to the labeled data for a period of 14 days, supporting operational flexibility while maintaining security protocols.
-- Set the user access to the labeled data to never expire, ensuring persistent protection of the information over time.
-- Create a policy named _Internal HR employee data_ that requires users to provide a justification for removing a label or lowering it classification.
+   - The labels should permit access to any authenticated user, ensuring that only verified individuals can view the sensitive data.
+   - Facilitate offline access to the labeled data for a period of 14 days, supporting operational flexibility while maintaining security protocols.
+   - Set the user access to the labeled data to never expire, ensuring persistent protection of the information over time.
+   - Create a policy named _Internal HR employee data_ that requires users to provide a justification for removing a label or lowering it classification.
 
-By applying these labels correctly, you will help to ensure the safe management of confidential HR documents, in accordance with the organization's data protection objectives.
+   By applying these labels correctly, you will help to ensure the safe management of confidential HR documents, in accordance with the organization's data protection objectives.
 
 </details>
 
