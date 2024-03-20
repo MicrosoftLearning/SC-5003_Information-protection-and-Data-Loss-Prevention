@@ -60,3 +60,5 @@ Your task is to develop and enforce a custom data loss prevention (DLP) policy t
 1. Once in the DLP policy creation wizard, select **Next** until you reach the **Policy mode** page, then select **Turn the policy on immediately** to enforce the DLP policy.
 1. Select **Next** to review the DLP policy, then select **Submit** once you've reviewed your changes.
 1. On the **Policy updated** page select **Done**.
+
+You have now successfully created a DLP policy to protect sensitive customer data.
