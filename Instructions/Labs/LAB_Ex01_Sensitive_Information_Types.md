@@ -4,6 +4,14 @@ lab:
     exercise: 'Exercise 1 - Create a custom sensitive information type'
 ---
 
+## WWL Tenants - Terms of use
+
+If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training.
+
+Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension.
+
+Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
+
 # Skilling tasks
 
 Your task is to create a custom sensitive information type (SIT) that meets the required criteria:
@@ -11,7 +19,7 @@ Your task is to create a custom sensitive information type (SIT) that meets the 
 - **Custom regex pattern for employee ID**: Include a regex pattern that identifies your organization's unique employee ID configuration, which consists of 9 characters: 3 digits, a dash, followed by 5 letters (e.g., 123-abcde).
 - **Keyword list associated with employee IDs**: Incorporate a list of keywords that are commonly associated with employee IDs to enhance detection accuracy.
 
-## Exercise instructions
+## Task 1 - Create a sensitive info type
 
 1. Navigate to the Microsoft Purview Compliance Portal.
 1. Expand **Data classification** then select **Classifiers**.

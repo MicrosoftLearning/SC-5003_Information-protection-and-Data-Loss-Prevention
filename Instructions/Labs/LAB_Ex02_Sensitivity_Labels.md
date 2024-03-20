@@ -6,29 +6,13 @@ lab:
 
 # Skilling Tasks
 
-Your task is to create and publish sensitivity labels within your organization that  classifies and protects sensitive data according to its level of confidentiality and the necessary access controls.
+Your task is to create and publish sensitivity labels within your organization that classifies and protects sensitive data according to its level of confidentiality and the necessary access controls.
 
 - **Create a sensitivity label** to categorize data.
 - **Create a sublabel** under the parent label to group data.
 - **Create a label policy** to establish rules and guidelines for managing sensitivity labels within the organization.
 
-> [!TIP]
-> Start with attempting this task with your current understanding from the **Challenge** outline or follow along with the **Exercise instructions**.
-
-## Challenge: Implement sensitivity labels for your Research & Development (R&D) department
-
-**Objective**: Create and publish a sensitivity label to improve data protection in the (R&D) department. Your task is to set up a main sensitivity label called _Restricted_, with a sublabel under it called _Experimental data (R&D)_. This classification system should follow these criteria to ensure effective data protection and compliance:
-
-- The labels should permit access to any authenticated user, ensuring that only verified individuals can view the sensitive data.
-- Facilitate offline access to the labeled data for a period of 2 days, supporting operational flexibility while maintaining security protocols.
-- Set the user access to the labeled data to never expire, ensuring persistent protection of the information over time.
-- Create a policy named _Restricted R&D data protection policy_ that requires users to provide a justification for removing a label or lowering it classification.
-
-By applying these labels correctly, you will help to ensure the safe management of confidential R&D documents, in accordance with the organization's data protection objectives.
-
-## Step by step exercise instructions
-
-**Objective**: Create and publish a sensitivity label to improve data protection in the HR department. Your task is to set up a main sensitivity label called _Internal_, with a sublabel under it called _Employee Data (HR)_.
+**Objective**: Create and publish a sensitivity label to improve data protection in the HR department. Your task is to set up a parent label called _Internal_, with a sublabel called _Employee Data (HR)_.
 
 ## Task 1 - Create a sensitivity label
 
@@ -45,7 +29,7 @@ By applying these labels correctly, you will help to ensure the safe management 
 1. Select **Next**.
 1. On the **Define the scope for this label** page, select **Items** and select **Files** and **Emails** then select **Next**.
 1. On the **Choose protection settings for the types of items you selected** page, select **Next**.
-1. Select **Next** and accept defaults until you reach the **Review your settings and finish** page select **Create label**.
+1. Select **Next** and accept defaults until you reach the **Review your settings and finish** page, then select **Create label**.
 1. On the **Your sensitivity label was created** page, select **Don't create a policy yet**, then select **Done**.
 
 ## Task 2 - Create a sublabel label
@@ -74,7 +58,7 @@ By applying these labels correctly, you will help to ensure the safe management 
 1. Select **Next** and accept defaults until you reach the **Review your settings and finish** page select **Create label**.
 1. On the **Your sensitivity label was created** page, select **Don't create a policy yet**, then select **Done**.
 
-## Task 3 instructions - Publish a sensitivity label
+## Task 3 - Publish a sensitivity label
 
 1. On the **Labels** page, select the checkboxes next to the newly created **Internal** and the **Employee data (HR)** sublabel.
 1. On the **Choose sensitivity labels to publish** page, ensure both the Internal and Employee data (HR) labels are displayed under **Sensitivity labels to publish**, then select **Next**.
