@@ -40,7 +40,7 @@ Your task is to develop and enforce a custom data loss prevention (DLP) policy t
    - Under **Conditions** select **+ Add condition** > **Content contains**.
    - Under **Content contains** select **Add** > **Sensitive info types**.
    - On the **Trainable classifiers** page on the right, select the classifiers for `Customer Complaints` and `Customer Files`, then select **Add** at the bottom of the page to add these pretrained classifiers.
-   > [!Tip]: Use the search bar to easily find trainable classifiers.
+   > [!tip] Use the search bar to easily find trainable classifiers.
    - Back on the **Create rule** page under **Content contains** select **+ Add condition** > **Content is shared from Microsoft365**.
    - Under **Content is shared from Microsoft365** select **with people outside my organization** from the dropdown.
    - Under **Actions** select **+ Add an action** > **Restrict or encrypt the content in Microsoft 365 locations**.
