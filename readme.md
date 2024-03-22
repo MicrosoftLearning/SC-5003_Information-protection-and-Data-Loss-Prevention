@@ -1,6 +1,8 @@
-# INF99X: Sample Course
+# Implement Information Protection and Data Loss Prevention by using Microsoft Purview
 
-**Are you an MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
+- **[Link to labs (HTML format)](https://microsoftlearning.github.io/SC-5003_Information-protection-and-Data-Loss-Prevention/)**
+
+- **Are you an MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
 
 ## What are we doing?
 
