@@ -50,7 +50,7 @@ Your task is to develop and enforce a custom data loss prevention (DLP) policy t
    - Under **Incident reports** set the **Use this severity level in admin alerts and reports:** to **Medium**.
    - At the  bottom of the **Create rule** select **Save**.
 1. Back on the **Customize advanced DLP rules** page, select **Next**.
-1. On the **Policy mode page** select **Run the policy in test mode** and ensure the **Show policy tips while in simulation mode** option is enabled, then select **Next**.
+1. On the **Policy mode page** select **Run the policy in simulation mode** and ensure the **Show policy tips while in simulation mode** option is enabled, then select **Next**.
 1. On the **Review and finish** page select **Submit**.
 1. On the **New policy create** page select **Done**.
 
