@@ -45,7 +45,7 @@ Your task is to develop and enforce a custom data loss prevention (DLP) policy t
    - Under **Content is shared from Microsoft365** select **with people outside my organization** from the dropdown.
    - Under **Actions** select **+ Add an action** > **Restrict or encrypt the content in Microsoft 365 locations**.
    - Under **Restrict access or encrypt the content in Microsoft 365 locations** ensure the radio button for **Block only people outside your organization** is selected.
-   - Under **User notifications** toggle notifications **On**, then select the checkbox to **Notify users in Office 365 service with a policy tip**.
+   - Under **User notifications** toggle notifications **On**, then select the checkbox to **Notify users in Office 365 service with a policy tip or email notification**.
    - Under **User overrides** select the checkbox for **Allow overrides from Microsoft 365 services**
    - Under **Incident reports** set the **Use this severity level in admin alerts and reports:** to **Medium**.
    - At the  bottom of the **Create rule** select **Save**.
