@@ -60,7 +60,7 @@ Your task is to create and publish sensitivity labels within your organization t
 
 ## Task 3 - Publish a sensitivity label
 
-1. On the **Labels** page, select the checkboxes next to the newly created **Internal** and the **Employee data (HR)** sublabel.
+1. On the **Labels** page, select the checkboxes next to the newly created **Internal** and the **Employee data (HR)** sublabel, then select **Publish labels**.
 1. On the **Choose sensitivity labels to publish** page, ensure both the Internal and Employee data (HR) labels are displayed under **Sensitivity labels to publish**, then select **Next**.
 1. Select **Next** until you reach the **Policy settings** page.
 1. On the **Policy settings** page select the checkbox for **Users must provide a justification to remove a label or lower its classification**.
