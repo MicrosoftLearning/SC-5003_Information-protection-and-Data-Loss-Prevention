@@ -8,55 +8,80 @@ lab:
 
 Your task is to create and publish sensitivity labels within your organization that classifies and protects sensitive data according to its level of confidentiality and the necessary access controls.
 
-- **Create a sensitivity label** to categorize data.
-- **Configure the label for auto-labeling** for files and emails.
-- **Configure an auto-labeling policy** for automatically classifying data in SharePoint and OneDrive.
-- **Publish the auto-labeling policy** to deploy the label across your organization, automating classification for enhanced security and compliance.
-
-**Objective**: Create and publish an auto-labeling policy for the Finance department. Your task is to set up a sensitivity label that automatically applies labels to files and emails based on financial data. You also need to create an auto-labeling policy that automatically applies those labels to content in SharePoint and OneDrive.
+1. Create a sensitivity label
 
 ## Task 1 - Create a sensitivity label
 
-1. Navigate to the Microsoft Purview Compliance Portal.
-1. Expand **Information protection**, then select **Labels**.
-1. On the **Labels** select **+ Create a label**.
-1. On the  **Provide basic details for this label** enter the following information:
+In this task, you'll create a sensitivity label that will auto label documents and emails found to contain information related to the European General Data Protection Regulation (GPDR).
 
-    - **Name**: `Protected Financial Records`
-    - **Display name**: `Protected Financial Records`
-    - **Description for users**: `Use for documents with sensitive financial data.`
-    - **Description for admins**: `Applies encryption and access controls to financial documents.`
+1. You should still be logged into Client 1 VM (SC-400-CL1) as the **SC-400-cl1\admin** account.
+
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as **Joni Sherman**.
+
+1. In the Microsoft Purview portal, select **Solutions** from the left side bar, then select **Information protection**. Select **Sensitivity labels**.
+
+1. On the **Sensitivity labels** page, find the newly created **Internal** sensitivity label. Select the vertical ellipsis (**...**) next to it, then select **+ Create sublabel** from the dropdown menu.
+
+1. The **New sensitivity label** configuration will start. On the **Provide basic details for this label** page, enter:
+
+   - **Name**: `GDPR Germany`
+   - **Display name**: `GDPR Germany`
+   - **Description for users**: `This document or email contains data related to the European General Data Protection Regulation (GPDR) for the region Germany.`
+   - **Description for admins**: `This label is auto applied to German GDPR documents.`
 
 1. Select **Next**.
-1. On the **Define the scope for this label** page, select **Items** and select **Files** and **Emails** then select **Next**.
-1. On the **Choose protection settings for the types of items you selected** page, select **Next**.
-1. On the **Auto-labeling for files and emails**:
-   - Set the toggle to enable **Auto-labeling for files and emails**
-   - Under **Detect content that matches these conditions** select **+ Add condition** > **Content contains**.
-   - Under **Content contains** select **Add** > **Sensitive info types**.
-   - On the **Sensitive info types** page search for and add the sensitive info type for `Credit Card Number`,  `U.S. Bank Account Number`, and `ABA Routing Number`. **Add** to add the three sensitive info types, then select **Save**.
-   - Under **When content matches these conditions** select **Automatically apply the label**.
-   - Leave the optional **Display this message to users when the label is applied** blank.
-1. Select **Next** and accept defaults until you reach the **Review your settings and finish** page select **Create label**.
-1. On the **Your sensitivity label was created** page, select **Don't create a policy yet**, then select **Done**.
 
-## Task 2 - Create an auto-labeling policy
+1. On the **Define the scope for this label** page, select **Items**, then select **Files** and **Emails**. If the checkbox for **Meetings** is selected, make sure it's deselected.
 
-1. On the **Labels** page, select the checkbox next to the newly created **Protected Financial Records** label and select **Create auto-labeling policy**.
-1. On the **Name your auto-labeling policy** page, enter the following information:
+1. Select **Next**.
 
-   - **Name**: `Finance Auto-Label Policy`
-   - **Enter a description for your sensitivity label policy**: `Automates the labeling of financial documents.`
-1. Select **Next** until you reach the **Define rules for content in all locations** page.
-1. On the **Define rules for content in all locations** select **New rule**.
-1. On the **New rule** page:
-   - Enter `Financial data` as the **Name**.
-   - Under **Conditions** select **+ Add condition** > **Content contains**.
-   - Under **Content contains** select **Add** > **Sensitive info type**.
-   - On the **Sensitive info types** page search for and add the sensitive info type for `Credit Card Number`,  `U.S. Bank Account Number`, and `ABA Routing Number`. **Add** to add the three sensitive info types, then select **Save**.
-1. Select **Next** until you reach the **Decide if you want to test out the policy now or later** page.
-1. On the **Decide if you want to test out the policy now or later** page select **Run policy in simulation mode**, then select **Next**.
-1. On the **Review and finish** page select **Create policy**.
+1. On the **Choose protection settings for labeled items** page, select **Next**.
+
+1. On the **Auto-labeling for files and emails** page, set the **Auto-labeling for files and emails** to enabled.
+
+1. In the **Detect content that matches these conditions** section, select **+ Add condition** > **Content contains**.
+
+1. In **Content contains** section select the **Add** > **Sensitive info types**.
+
+1. In the **Sensitive info types** flyout panel, search for `German` to display sensitive info types related to Germany.
+
+1. Select the checkbox next to the **Name** field to select all sensitive info types related to German, then select **Add**.
+
+    ![Screenshot showing how to add all German related sensitive info types.](../Media/select-all-german-types.png)
+
+1. Back on the **Auto-labeling for files and emails** page, select **Next**.
+
+1. On the **Define protection settings for groups and sites** page, select **Next**.
+
+1. On the **Auto-labeling for schematized data assets (preview)** page, select **Next**.
+
+1. On the **Review your settings and finish** page, select **Create label**.
+
+1. On the **Your sensitivity label was created** page, select **Publish label to users' apps**, then select **Done**.
+
+1. On the **Create auto-labeling policy** flyout panel, select **Review policy** to start the configuration to create a new label policy.
+
+1. On the **Name your auto-labeling policy** page, enter:
+
+   - **Name**: `GDPR Germany policy`
+   - **Enter a description for your sensitivity label policy**: `This auto apply sensitivity labels policy is for the GDPR region of Germany.`
+
+1. Select **Next**.
+
+1. On the **Assign admin units** page, select **Next**.
+
+1. On the **Choose locations where you want to apply the label** page, leave the defaults selected, then select **Next**.
+
+1. On the **Set up common or advanced rules** page, select **Next**.
+
+1. On the **Define rules for content in all locations** page, select **Next**.
+
+1. On the **Decide if you want to test out the policy now or later** select **Run policy in simulation mode**, then select the checkbox for **Automatically turn on policy if not modified for 7 days in simulation.**, then select **Next**.
+
+1. On the **Review and finish** page, select **Create policy**.
+
 1. On the **Your auto-labeling policy was created** page, select **Done**.
 
-You have now successfully created a sensitivity label to classify financial data for the Finance department.
+You have successfully created and published an auto apply sensitivity label for GDPR documents in the region Germany.
+
+It can take up to 24 hours for auto applied sensitivity labels to be applied. This duration will be longer when applied to more than 25,000 documents (that is, the daily limit).
