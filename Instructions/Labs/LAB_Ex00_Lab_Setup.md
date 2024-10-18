@@ -22,9 +22,9 @@ In this lab, you'll configure and prepare your environment for administration ta
 - Enable Search by Name in Microsoft Teams
 - Enable information barriers in SharePoint Online and OneDrive
 
-## Task - Enable Audit in the Microsoft Purview portal
+## Task – Enable Audit in the Microsoft Purview portal
 
-In this task, you'll enable Audit in the Microsoft Purview portal to monitor portal activities.
+In this task, you'll enable Audit in the Microsoft Purview portal to monitor portal activities. For the exercises in these labs, Audit is needed to create an auto-labeling policy.
 
 1. In Microsoft Edge, navigate to the Microsoft Purview portal, `https://purview.microsoft.com`, and log in as a user with **Global Administrator** rights.
 
@@ -44,35 +44,27 @@ You have successfully enabled auditing in Microsoft 365.
 
 ## Task – Assign compliance roles
 
-In this task, you'll assign the Compliance Admin to the user you'll be using for these lab exercises.
+In this task, you'll assign the **Compliance Admin** to the user you'll be using for these lab exercises.
 
-1. Open **Microsoft Edge** and navigate to the Microsoft Purview portal, `https://purview.microsoft.com`. You'll need to login as a user that has **Global Administrator** rights.
+1. Open **Microsoft Edge** and navigate to the Microsoft 365 admin center, `https://admin.microsoft.com`. You'll need to login as a user that has **Global Administrator** rights.
 
-1. Select **Settings** from the left sidebar.
+1. Expand **Users** in the left sidebar, then select **Active users**.
 
-1. On the left sidebar, expand **Roles and scopes** then select **Role groups**.
+1. Select or create a user to continue with these lab exercises.
 
-1. On the **Role groups for Microsoft Purview solutions** select **Compliance Administrator**.
+   If you choose to use an existing user, select a user with minimal rights for least access privilege.
 
-1. On the **Compliance Administrator** flyout panel on the right, select **Edit** to edit this role group.
+   1. If creating a new user, assign the user with a license that's appropriate for these lab exercises. The user must have an Microsoft 365 E5 license or compatible add-on for these exercises. Assign the user the **Compliance Administrator** role in the optional settings in the new user set up and finalize your new user creation.
 
-1. On the **Edit members of the role group** page, select **Choose users**.
+   1. If modifying the access of an existing user, select the user, then select **Manage roles**. Assign the user the **Compliance Administrator** role and save your changes.
 
-1. On the **Choose users** flyout panel on the right, select the checkbox to the left of the user you'll be performing the next lab exercises with, then select the **Select** button at the bottom of the page.
-
-1. Back on the **Edit members of the role group** page, select **Next**.
-
-1. On the **Review the role group and finish** page, review your changes and select **Save**.
-
-1. On the **You successfully updated the role group** select **Done**.
-
-1. Sign out of the account with the Global Administrator rights by selecting their user icon in the top right, then selecting **Sign out**.
+1. Sign out of the account with the Global Administrator access by selecting their user icon in the top right, then select **Sign out**.
 
    Example:
 
    ![Screenshot showing the navigation path to sign out of the MOD Administrator account.](../Media/sign-out.png)
 
-You have successfully assigned a user the Compliance Administrator role, which is required to perform the different exercises of this lab.
+You have successfully assigned a user the **Compliance Administrator** role, which is required to perform the different exercises of this lab.
 
 ## Task – Explore the Microsoft Purview portal
 

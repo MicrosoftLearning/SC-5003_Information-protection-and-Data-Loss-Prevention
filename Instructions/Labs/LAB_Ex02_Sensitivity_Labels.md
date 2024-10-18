@@ -13,16 +13,15 @@ Your task is to create and publish sensitivity labels within your organization t
 1. Enable support for sensitivity labels
 1. Create sensitivity labels
 1. Publish sensitivity labels
-1. Apply sensitivity labels
 1. Configure auto labeling
 
-## Task 1 – Enable support for sensitivity labels (optional)
+## Task 1 – Enable support for sensitivity labels in SharePoint and OneDrive
 
 In this task, you'll install the necessary modules and enable support for sensitivity labels on your tenant. This is needed for the optional task of applying sensitivity labels later in this exercise.
 
 1. In the desktop, open an elevated PowerShell window by right clicking the Windows button in the task bar, then select **Terminal (Admin)**.
 
-1. Confirm the **User Account Control** window with **Yes** and press Enter.
+1. Confirm the **User Account Control** window with **Yes**.
 
 1. Run the **Install-Module** cmdlet to install the latest MS Online PowerShell module version:
 
@@ -107,6 +106,9 @@ In this task, your HR department has requested a sensitivity label to apply to H
 
 1. On the **Define the scope for this label** page, select **Items**, then select **Files** and **Emails**. If the checkbox for **Meetings** is selected, make sure it's deselected.
 
+   > [!NOTE]
+   > When **Meetings** is selected, you can't create a sublabel for the sensitivity label.
+
 1. Select **Next**.
 
 1. On the **Choose protection settings for labeled items** page, select **Next**.
@@ -130,11 +132,11 @@ In this task, your HR department has requested a sensitivity label to apply to H
    - **Name**: `Employee data (HR)`
    - **Display name**: `Employee data (HR)`
    - **Description for users**: `This HR label is the default label for all specified documents in the HR Department.`
-   - **Description for admins**: `This label is created in consultation with Ms. Jones (Head of HR department). Contact her, when you want to change settings of the label.`
+   - **Description for admins**: `This label was created with input from the Head of HR. Contact the HR department for any changes to the label settings.`
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select **Items**, then select **Files** and **Emails**. If the checkbox for **Meetings** is selected, make sure it's deselected.
+1. On the **Define the scope for this label** page, select **Items**, then select **Files**, **Emails**, and **Meetings**.
 
 1. Select **Next**.
 
@@ -148,7 +150,7 @@ In this task, your HR department has requested a sensitivity label to apply to H
    - **User access to content expires**: Never
    - **Allow offline access**: Only for a number of days
    - **Users have offline access to the content for this many days**: 15
-   - Select the **Assign permissions** link. On the **Assign permissions** flyout panel, select the **+ Add any authenticated users**, then select **Save** to ally this setting.
+   - Select the **Assign permissions** link. On the **Assign permissions** flyout panel, select the **+ Add any authenticated users**, then select **Save** to apply this setting.
 
 1. On the **Access control** page, select **Next**.
 
@@ -170,7 +172,7 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If not, navigate to **`https://purview.microsoft.com`** > **Solutions** > **Information Protection** > **Sensitivity labels**.
 
-1. On the **Sensitivity labels** page select **Publish label**.
+1. On the **Sensitivity labels** page select **Publish labels**.
 
 1. The publish sensitivity labels configuration will start.
 
@@ -186,13 +188,13 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 1. On the **Policy settings** page, select **Next**.
 
-1. On the **Default settings for documents** select **Next**.
+1. On the **Default settings for documents** page, select **Next**.
 
-1. On the **Default settings for emails** select **Next**.
+1. On the **Default settings for emails** page, select **Next**.
 
-1. On the **Default settings for meetings and calendar events** select **Next**.
+1. On the **Default settings for meetings and calendar events** page, select **Next**.
 
-1. On the **Default settings for Power BI Content** select **Next**.
+1. On the **Default settings for Fabric and Power BI content** page, select **Next**.
 
 1. On the **Name your policy** page, enter:
 
@@ -207,54 +209,143 @@ You will now publish the Internal and HR sensitivity label so that the published
 
 You have successfully published the Internal and HR sensitivity labels. Note that it can take up to 24 hours for changes to replicate to all users and services.
 
-## Task 4 – Apply sensitivity labels (optional)
+## Task 4 – Create a client-side auto labeling policy
 
-In this task, you will create sensitivity labels in Word and Outlook emails. The document created will be stored in OneDrive and sent to an HR employee via email.
+In this task, you'll create a client-side auto-labeling policy. Client-side auto-labels apply automatically to files and emails based on their content, ensuring that sensitive information is classified and protected before it leaves the user's device.
 
-1. You should still be logged into Microsoft Purview as the user with **Compliance Administrator** rights. In **Microsoft Edge**, open a new Word document by selecting the meatball menu in the top left and selecting **Word**.
+1. You should still be on the **Sensitivity labels** page in the Microsoft Purview portal. If not, navigate to **`https://purview.microsoft.com`** > **Solutions** > **Information Protection** > **Sensitivity labels**.
 
-    ![Screenshot showing where to select Word from the meatball menu.](../Media/meatball-menu-word.png)
+1. On the **Sensitivity labels** page, find the newly created **Internal** sensitivity label. Select the vertical ellipsis (**...**) next to it, then select **+ Create sublabel** from the dropdown menu.
 
-1. Select **Blank document** to create a new document.
+1. The **New sensitivity label** configuration will start. On the **Provide basic details for this label** page, enter:
 
-1. On the **Your privacy option** dialogue, select **Close**.
+   - **Name**: `Confidential Research Data`
+   - **Display name**: `Confidential Research Data`
+   - **Description for users**: `This document or email contains sensitive research or development data that is proprietary to the organization.`
+   - **Description for admins**: `This label is auto-applied to documents and emails containing information related to research, prototypes, or internal projects.`
 
-1. Enter this text in the new blank document:
+1. Select **Next**.
 
-   `Important HR employee document.`
+1. On the **Define the scope for this label** page, select **Items**, then select **Files**, **Emails**, and **Meetings**.
 
-1. Select **Sensitivity** from the navigation ribbon and select **Internal** > **Employee Data (HR)** to apply the newly created sensitivity label to this document.
+1. Select **Next**.
 
-    ![Screenshot showing the sensitivity label button in Word.](../Media/word_label.png)
+1. On the **Choose protection settings for labeled items** page, select **Apply content marking**, then select **Next**.
 
-    >**Note:** It can take 24-48 hours for newly published sensitivity labels to be available for application. If the newly created sensitivity labels aren't available, you can use **Confidential** > **All Employees** for this exercise.
+1. Select **Next**.
 
-1. In the upper left of the document, select **Document** to rename this file, and rename it to **`HR Document`**. Press enter to apply this name change.
+1. On the **Content marking** page, select the toggle to enable content marking.
 
-    ![Screenshot showing where to rename a file in Word on the web.](../Media/rename-web-word-file.png)
+1. If the checkbox for **Add a footer** is selected, deselect it, and select the checkbox for **Add a watermark**, then select **Customize text**.
 
-1. Close the tab to return to the Word Online tab. Select the meatball menu on the top left and select **Outlook** to open Outlook on the web.
+1. In the **Customize watermark text** flyout pane, enter `Confidential - R&D Data` as **Watermark text**. Increase the **Font size** to `40`, then select **Save** at the bottom of the panel.
 
-1. In Outlook on the web, select **New mail**.
+1. Back on the **Content marking** page, if other content marking options are enabled, disable them to ensure **Add a watermark** is the only option enabled.
 
-1. In the **To** field enter the name: **`Allan`** and select **Allan Deyoung** from the drop-down list.
+1. Select **Next**.
 
-1. In the subject line, enter: **`Employee data for HR`**
+1. On the **Auto-labeling for files and emails** page, set the **Auto-labeling for files and emails** to enabled.
 
-1. In the body of the email, enter:
+1. In the **Detect content that matches these conditions** section, select **+ Add condition** > **Content contains**.
 
-    ``` text
-    Dear Mr. Deyoung, 
+1. In **Content contains** section select the **Add** > **Trainable classifiers**.
 
-    Please find attached the important HR employee document. 
+1. In the **Trainable classifiers** flyout panel, add these trainable classifiers:
 
-    Kind regards,
+   - `Source code`
+   - `Project documents`
+   - `Software Product Development Files`
 
-    Joni Sherman
-    ```
+1. Select **Add** at the bottom of the panel to add these trainable classifiers.
 
-1. Select the paperclip symbol from the top navigation ribbon to add an attachment. Under **Suggested files** select **HR Document.docx**.
+1. Back on the **Auto-labeling for files and emails** page, select **Next**.
 
-1. Select **Send** to send out the email message with attached document.
+1. On the **Define protection settings for groups and sites** page, select **Next**.
 
-You have successfully created an HR Word document with a sensitivity label, which was saved onto your OneDrive. You then emailed to document to an HR staff member where the email was also set with a sensitivity label.
+1. On the **Auto-labeling for schematized data assets (preview)** page, select **Next**.
+
+1. On the **Review your settings and finish** page, select **Create label**.
+
+1. On the **Your sensitivity label was created** page, select **Publish label to users' apps**, then select **Done**.
+
+1. On the **Publish label** flyout panel, select **Create new label policy**.
+
+1. On the **Choose sensitivity labels to publish** page, select the **Choose sensitivity labels to publish** link.
+
+1. Select the parent **Internal** label and the **Confidential Research Data** label that was just created, then select **Add**.
+
+1. Back on the **Choose sensitivity labels to publish** page, select **Next**.
+
+1. On the **Assign admin units** page, select **Next**.
+
+1. On the **Publish to users and groups** page, select **Next**.
+
+1. On the **Policy settings** page, select the checkbox for **Users must provide a justification to remove a label or lower its classification**, then select **Next**.
+
+1. On the **Default settings for documents​** page, select **Next** until you reach the **Name your policy** page.
+
+1. On the **Name your policy** page, enter:
+
+   - **Name**: `R&D Confidential Data Policy`
+   - **Enter a description for your sensitivity label policy**: `Automatically applies labels to source code, project documents, and development files to protect sensitive R&D data.`
+
+1. Select **Next**.
+
+1. On the **Review and finish** page, select **Submit**.
+
+1. On the **New policy created** page, select **Done**.
+
+You have successfully created a client-side auto-labeling policy that will automatically apply the **Confidential Research Data** label to files and emails containing research and development data. It might take up to 24 hours for the policy to take full effect.
+
+## Task 5 – Create a service-side auto labeling policy
+
+In this task, you'll create a service-side auto-labeling policy. Service-side auto-labels are applied by cloud services like SharePoint, Exchange, and OneDrive after content is uploaded or received, ensuring that sensitive data is protected even if users don't manually classify it.
+
+1. You should still be on the **Sensitivity labels** page in the Microsoft Purview portal. If not, navigate to **`https://purview.microsoft.com`** > **Solutions** > **Information Protection** > **Sensitivity labels**.
+
+1. Expand the **Internal** label, then select the `Confidential Research Data` sublabel you created in a previous task.
+
+1. In the **Confidential Research Data** flyout panel, you'll see the properties for the auto-label you created in a previous task. In this panel, select **Create auto-labeling policy**.
+
+    ![Screenshot showing the option to create an auto-labeling policy.](../Media/create-auto-labeling-policy.png)
+
+1. On the **Name your policy** page, enter:
+
+   - **Name**: `R&D Confidential Data Container Policy`
+   - **Enter a description for your sensitivity label policy**: `Automatically applies the Confidential Research Data label to content in SharePoint, Exchange, and OneDrive.`
+
+1. Select **Next**.
+
+1. On the **Assign admin units** page, select **Next**.
+
+1. On the **Choose locations where you want to apply the label** page, leave **Exchange email**, **SharePoint sites**, and **OneDrive accounts** selected, then select **Next**.
+
+1. On the **Set up common or advanced rules** page, leave **Common rules** selected, then select **Next**.
+
+1. On the **Define rules for content in all locations** page, edit the **Confidential Research Data rule**.
+
+    ![Screenshot where to edit the rule for a service-side auto-labeling policy.](../Media/auto-apply-labels-edit-rule.png)
+
+1. In the **New rule** flyout panel, under **Conditions** > **Content contains** select the dropdown for **Add**, then select **Trainable classifiers**.
+
+1. In the **Trainable classifiers** flyout panel, add these trainable classifiers:
+
+   - `Source code`
+   - `Project documents`
+   - `Software Product Development Files`
+
+   This ensures consistent protection between client-side and service-side labels.
+
+1. Select **Add** at the bottom of the panel to add these trainable classifiers.
+
+1. Back on the **Define rules for content in all locations** page, select **Next**.
+
+1. On the **Choose a label to auto-apply**, leave the **Internal/Confidential Research Data** chosen, then select **Next**.
+
+1. On the **Decide if you want to test out the policy now or later** page, select **Run policy in simulation mode**, and select the checkbox for **Automatically turn on policy if not modified after 7 days in simulation**, then select **Next**.
+
+1. On the **Review and finish** page, select **Create policy**.
+
+1. On the **Your auto-labeling policy was created** page, select **Done**.
+
+You have successfully created a service-side auto-labeling policy that will automatically apply the **Confidential Research Data** label to content stored or shared in SharePoint, Exchange, and OneDrive. It might take up to 24 hours for the policy to take effect.

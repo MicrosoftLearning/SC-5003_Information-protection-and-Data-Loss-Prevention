@@ -11,9 +11,7 @@ lab:
 1. Create a DLP policy in simulation mode
 1. Modify a DLP policy
 1. Create a DLP policy in PowerShell
-1. Test your DLP policy
 1. Activate a policy in simulation mode
-1. Modify policy priority
 
 ## Task 1 – Create a DLP policy in simulation mode
 
