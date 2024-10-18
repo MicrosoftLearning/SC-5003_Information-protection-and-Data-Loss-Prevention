@@ -14,4 +14,4 @@ Hyperlinks to each of the lab exercises and demos are listed below.
 | Exercise | Task |
 | --- | --- |
 {% for activity in labs  %}| {{ activity.lab.exercise }} | [{{ activity.lab.task }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
-{% endfor %
+{% endfor %}
