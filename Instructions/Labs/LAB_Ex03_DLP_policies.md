@@ -1,7 +1,7 @@
 ---
 lab:
     task: 'Create a data loss prevention (DLP) policy'
-    exercise: 'Exercise 4 - Create a data loss prevention (DLP) policy'
+    exercise: 'Exercise 3 - Create a data loss prevention (DLP) policy'
 ---
 
 # Skilling Tasks

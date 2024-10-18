@@ -4,24 +4,15 @@ lab:
     exercise: 'Exercise 1 - Create a custom sensitive information type'
 ---
 
-## WWL Tenants - Terms of use
+# Skilling Task
 
-If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training.
+Your task is to create and publish sensitivity labels within your organization that classifies and protects sensitive data according to its level of confidentiality and the necessary access controls.
 
-Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension.
+**Task**:
 
-Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
+- Create a custom sensitive information type
 
-# Lab 1 - Exercise 2 - Manage sensitive information types
-
-Contoso Ltd. previously had issues with employees accidentally sending out personal information from customers when working on support tickets in the ticketing solution. To prevent this, you need to create a custom sensitive information type to identify employee IDs in emails and documents.
-
-**Tasks**:
-
-1. Create custom sensitive information types
-1. Test custom sensitive information types
-
-## Task 1 – Create custom sensitive information types
+## Task – Create a custom sensitive information type
 
 In this task, you'll create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
 
