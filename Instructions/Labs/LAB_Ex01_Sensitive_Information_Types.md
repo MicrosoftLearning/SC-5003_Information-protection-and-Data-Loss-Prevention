@@ -12,32 +12,70 @@ Tenants should not be shared or used for purposes outside of hands-on labs. The 
 
 Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
 
-# Skilling tasks
+# Lab 1 - Exercise 2 - Manage sensitive information types
 
-Your task is to create a custom sensitive information type (SIT) that meets the required criteria:
+Contoso Ltd. previously had issues with employees accidentally sending out personal information from customers when working on support tickets in the ticketing solution. To prevent this, you need to create a custom sensitive information type to identify employee IDs in emails and documents.
 
-- **Custom regex pattern for employee ID**: Include a regex pattern that identifies your organization's unique employee ID configuration, which consists of 9 characters: 3 digits, a dash, followed by 5 letters (e.g., 123-abcde).
-- **Keyword list associated with employee IDs**: Incorporate a list of keywords that are commonly associated with employee IDs to enhance detection accuracy.
+**Tasks**:
 
-## Task 1 - Create a sensitive info type
+1. Create custom sensitive information types
+1. Test custom sensitive information types
 
-1. Navigate to the Microsoft Purview Compliance Portal.
-1. Expand **Data classification** then select **Classifiers**.
-1. Select **Sensitive info types** then select **+ Create sensitive info type**.
-1. On the **Name your sensitive info type** page give your sensitive info type a meaningful **Name** and **Description**, then select **Next**.
+## Task 1 – Create custom sensitive information types
+
+In this task, you'll create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
+
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as the user you set as the **Compliance Administrator** in a previous task.
+
+1. On the left sidebar, select **Solutions** then select **Information Protection**.
+
+1. On the left sidebar, expand **Classifiers** then select **Sensitive info types**.
+
+1. On the **Sensitive info types** page, select **+ Create sensitive info type** to start the sensitive information type configuration.
+
+1. On the **Name your sensitive info type** page, enter:
+
+    - **Name**: `Contoso Employee IDs`
+    - **Description**: `Pattern for Contoso employee IDs.`
+
+1. Select **Next**.
+
 1. On the **Define patterns for this sensitive info type** page, select **Create pattern**.
-1. On the **New pattern** page select **+ Add primary element** > **Regular expression**.
-1. On the **Add a regular expression page**, give the regular expression a meaningful name for **ID** and enter `\d{3}-[a-zA-Z]{5}` in the **Regular expression** field to support the organization's requirement. Select **Done** once complete.
-1. Back on the **New pattern** page under **Supporting elements** select **+ Add supporting elements or group of elements** > **Keyword list**.
-1. On the **Add a keyword list** page, give your keyword list a meaningful **ID**. In **Keyword group #1** under **Case insensitive** enter:
-   - `Employee ID`
-   - `Staff number`
-   - `Work ID`
-1. Select **Done** once complete.
-1. Back on the **New pattern** page select **Create**.
-1. Select **Next** on the **Define patterns for this sensitive info type** page.
-1. On the **Choose the recommended confidence level to show in compliance policies** page, leave the default select, then select **Next**.
-1. Review your settings, then select **Create**.
-1. On the **Your sensitive info type is created** page, select **Done**.
 
-You have now successfully created a custom sensitive information type (SIT) to improve the security and management of your company's unique employee ID numbers.
+1. On the **New pattern** flyout panel on the right, select **+ Add primary element** > **Regular expression**.
+
+1. On the **+ Add a regular expression​** flyout panel on the right, enter:
+
+    - **ID**: `Contoso IDs`
+    - **Regular expression**: `[A-Z]{3}[0-9]{6}`
+    - Select the radio button for *String match*
+
+1. Select **Done** at the bottom of the flyout panel.
+
+1. Back on the **New pattern** flyout panel, under **Supporting elements**, select **+ Add supporting elements or group of elements** drop-down menu and select **Keyword list**.
+
+1. On the **Add a keyword list** flyout panel on the right, enter:
+
+    - **ID**: `Employee ID keywords`
+    - **Case insensitive**:
+
+       ```text
+       Employee
+       ID
+       ```
+
+    - Select the radio button for *Word match*
+
+1. Select **Done** at the bottom of the flyout panel.
+
+1. Back on the **New pattern** flyout panel, under **Character proximity**, decrease the **Detect primary AND supporting elements** value to `100` characters.
+
+1. Select the **Create** button at the bottom of the flyout panel.
+
+1. Back on the **Define patterns for this sensitive info type** page select **Next**.
+
+1. On the **Choose the recommended confidence level to show in compliance policies** page use the default value and select **Next**.
+
+1. On the **Review settings and finish** page review the settings and select **Create**. When successfully created select **Done**.
+
+You have successfully created a new sensitive information type to identify employee IDs in the pattern of three uppercase characters, six numbers, and the keywords 'Employee' or 'IDs' within a range of 100 characters.
