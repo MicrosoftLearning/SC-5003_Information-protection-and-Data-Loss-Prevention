@@ -1,6 +1,6 @@
 ---
 lab:
-    task: Prepare your environment for administration'
+    task: 'Prepare your environment for administration'
     exercise: 'Exercise 0 - Prepare your environment for administration'
 ---
 
