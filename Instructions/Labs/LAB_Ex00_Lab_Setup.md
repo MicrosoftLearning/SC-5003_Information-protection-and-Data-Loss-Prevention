@@ -19,8 +19,8 @@ In this lab, you'll configure and prepare your environment for administration ta
 **Tasks:**
 
 - Enable Audit in the Microsoft Purview portal
-- Enable Search by Name in Microsoft Teams
-- Enable information barriers in SharePoint Online and OneDrive
+- Assign compliance roles
+- Explore the Microsoft Purview portal
 
 ## Task – Enable Audit in the Microsoft Purview portal
 
