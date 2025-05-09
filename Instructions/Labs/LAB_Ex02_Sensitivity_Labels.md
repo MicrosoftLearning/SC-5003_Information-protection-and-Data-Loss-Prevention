@@ -23,12 +23,16 @@ In this task, you'll install the necessary modules and enable support for sensit
 
 1. Confirm the **User Account Control** window with **Yes**.
 
-1. Run the **Install-Module** cmdlet to install the latest MS Online PowerShell module version:
+1. Run the **Install-Module** cmdlet to install the latest Microsoft Graph PowerShell module version:
 
     ```powershell
-    Install-Module -Name MSOnline
+    Install-Module -Name Microsoft.Graph -Scope CurrentUser
     ```
-
+   > [!NOTE]
+   > If you get a message stating that the module is already installed, run the following command instead:
+    ```powershell
+    Update-Module -Name Microsoft.Graph    ```
+ 
 1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter. This might take a while to complete processing.
 
 1. Run the **Install-Module** cmdlet to install the latest SharePoint Online PowerShell module version:
@@ -39,26 +43,26 @@ In this task, you'll install the necessary modules and enable support for sensit
 
 1. Confirm the Untrusted repository security dialog with **Y** for Yes and press Enter.
 
-1. Run the **Connect-MsolService** to connect to the MS Online service:
+1. Run the **Connect-MgGraph** command to connect to the Microsoft Graph service:
 
     ```powershell
-    Connect-MsolService
+    Connect-MgGraph -Scopes "Domain.Read.All"
     ```
 
 1. In the **Sign into your account** form, sign in as the user you selected as the **Compliance Administrator** in a previous exercise.
 
 1. After signing in, navigate back to the terminal window.
 
-1. Run the **Get-Msoldomain** cmdlet and save the domain as a variable:
+1. Run the **Get-MgDomain** cmdlet and save the domain as a variable:
 
     ```powershell
-    $domain = get-msoldomain
+    $domain = Get-MgDomain | Select-Object -Property ID
     ```
 
 1. Use the _$domain_ variable created in the previous step to create a new variable for _$adminurl_:
 
     ```powershell
-    $adminurl = "https://" + $domain.Name.split('.')[0] + "-admin.sharepoint.com"
+    $adminurl = "https://" + $domain.ID.split('.')[0] + "-admin.sharepoint.com"
     ```
 
 1. Run the **Connect-SPOService** cmdlet using the _$adminurl_ variable created in the previous step:
