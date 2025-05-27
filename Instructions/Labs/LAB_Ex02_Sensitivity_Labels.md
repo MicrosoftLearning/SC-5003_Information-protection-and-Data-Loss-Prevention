@@ -17,71 +17,19 @@ Your task is to create and publish sensitivity labels within your organization t
 
 ## Task 1 – Enable support for sensitivity labels in SharePoint and OneDrive
 
-In this task, you'll install the necessary modules and enable support for sensitivity labels on your tenant. This is needed for the optional task of applying sensitivity labels later in this exercise.
+In this task, you'll enable co-authoring for sensitivity labels, which also enables sensitivity labels for files in SharePoint and OneDrive.
 
-1. In the desktop, open an elevated PowerShell window by right clicking the Windows button in the task bar, then select **Terminal (Admin)**.
+1. Open **Microsoft Edge**, then navigate to `https://purview.microsoft.com`.
 
-1. Confirm the **User Account Control** window with **Yes**.
+1. In the left navigation, select **Settings** > **Information Protection**.
 
-1. Run the **Install-Module** cmdlet to install the latest MS Online PowerShell module version:
+1. On the **Information Protection settings** ensure you're on the **Co-authoring for files with sensitivity labels** tab.
 
-    ```powershell
-    Install-Module -Name MSOnline
-    ```
+1. Select the checkbox for **Turn on co-authoring for files with sensitivity labels**.
 
-1. Confirm the Nuget security dialog and the Untrusted repository security dialog with **Y** for Yes and press Enter. This might take a while to complete processing.
+1. Select **Apply** at the bottom of the screen.
 
-1. Run the **Install-Module** cmdlet to install the latest SharePoint Online PowerShell module version:
-
-    ```powershell
-    Install-Module -Name Microsoft.Online.SharePoint.PowerShell
-    ```
-
-1. Confirm the Untrusted repository security dialog with **Y** for Yes and press Enter.
-
-1. Run the **Connect-MsolService** to connect to the MS Online service:
-
-    ```powershell
-    Connect-MsolService
-    ```
-
-1. In the **Sign into your account** form, sign in as the user you selected as the **Compliance Administrator** in a previous exercise.
-
-1. After signing in, navigate back to the terminal window.
-
-1. Run the **Get-Msoldomain** cmdlet and save the domain as a variable:
-
-    ```powershell
-    $domain = get-msoldomain
-    ```
-
-1. Use the _$domain_ variable created in the previous step to create a new variable for _$adminurl_:
-
-    ```powershell
-    $adminurl = "https://" + $domain.Name.split('.')[0] + "-admin.sharepoint.com"
-    ```
-
-1. Run the **Connect-SPOService** cmdlet using the _$adminurl_ variable created in the previous step:
-
-    ```powershell
-    Connect-SPOService -url $adminurl
-    ```
-
-1. In the **Sign into your account** form, sign in as the **Global Administrator**.
-
-1. After signing in, navigate back to the terminal window.
-
-1. Run the **Set-SPOTenant** cmdlet to enable support for sensitivity labels:
-
-    ```powershell
-    Set-SPOTenant -EnableAIPIntegration $true
-    ```
-
-1. Confirm the changes with **Y** for Yes and press Enter.
-
-1. Close the PowerShell window.
-
-You have successfully enabled support for sensitivity labels for Teams and SharePoint sites.
+You have successfully enabled support for sensitivity labels for files in SharePoint and OneDrive.
 
 ## Task 2 – Create sensitivity labels
 
