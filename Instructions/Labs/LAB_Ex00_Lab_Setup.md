@@ -24,11 +24,17 @@ In this lab, you'll configure and prepare your environment for administration ta
 
 ## Task – Enable Audit in the Microsoft Purview portal
 
-In this task, you'll enable Audit in the Microsoft Purview portal to monitor portal activities. For the exercises in these labs, Audit is needed to create an auto-labeling policy.
+In this task, you'll enable Audit in the Microsoft Purview portal to monitor portal activities.
 
-1. In Microsoft Edge, navigate to the Microsoft Purview portal, `https://purview.microsoft.com`, and log in as a user with **Global Administrator** rights.
+1. Log into Client 1 VM (SC-401-CL1) with the **Admin** account.
 
-1. A message about the new Microsoft Purview portal will appear on the screen. Select the option to agree with the terms of data flow disclosure and the privacy statement, then select **Try now**.
+1. Open Microsoft Edge.
+
+1. In **Microsoft Edge**, navigate to `https://purview.microsoft.com` and sign in as **MOD Administrator**, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant prefix provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+
+1. In Microsoft Edge, navigate to the Microsoft Purview portal, `https://purview.microsoft.com`, and log in.
+
+1. A message about the new Microsoft Purview portal will appear on the screen. Select **Get started** to access the new portal.
 
     ![Screenshot showing the Welcome to the new Microsoft Purview portal screen.](../Media/welcome-purview-portal.png)
 
@@ -40,18 +46,57 @@ In this task, you'll enable Audit in the Microsoft Purview portal to monitor por
 
 1. Once you select this option, the blue bar should disappear from this page.
 
->[!alert] If you receive an error enabling Audit in this exercise, please use these steps as a work around:
->1. Open an elevated Terminal window by selecting the Windows button with the right mouse button and then select Terminal (Admin).
->1. Install the ExchangeOnlineManagement module by running `Install-Module -Name ExchangeOnlineManagement`
->1. Connect to ExchangeOnlineManagement by running `Connect-ExchangeOnline`
->1. When prompted, login by entering the administrator username and password from your lab hosting provider.
->1. To verify if Audit is enabled, run `Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled`
->1. If false, then the audit log is turned off.
->1. To enable Audit, run `Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true`
->   1. If you receive an error that you are unable to run the script in your organization, run `Enable-OrganizationCustomization`
->   1. Try again to run `Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true`
->1. To confirm Audit is enabled, run `Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled`
->1. Once complete, run `Disconnect-ExchangeOnline` to end your session
+    >[!Note] **Note: If the Audit button doesn't enable logging**
+    >
+    >In some tenants, selecting **Start recording user and admin activity** might not activate Audit.  
+    >
+    >If this happens, you can enable Audit through PowerShell instead:
+    >
+    >1. Open an elevated Terminal window by right-clicking the Windows button and selecting **Terminal (Admin)**.  
+    >
+    >1. Install the latest **Exchange Online PowerShell** module:
+    >
+    >     ```powershell
+    >     Install-Module ExchangeOnlineManagement
+    >     ```
+    >
+    >     Confirm any prompts by typing **Y** for Yes and pressing **Enter**.
+    >
+    >1. Run the following command to change your execution policy:
+    >
+    >     ```powershell
+    >     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+    >     ```
+    >
+    >1. Close the elevated Terminal window and open a regular PowerShell session.
+    >
+    >1. Connect to Exchange Online:
+    >
+    >     ```powershell
+    >     Connect-ExchangeOnline
+    >     ```
+    >
+    >    Sign in as `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant prefix provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+    >
+    >1. Check if Audit is enabled:
+    >
+    >     ```powershell
+    >     Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+    >     ```
+    >
+    >    If it returns **_False_**, enable Audit:
+    >
+    >     ```powershell
+    >     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
+    >     ```
+    >
+    >1. Verify that it's now enabled:
+    >
+    >     ```powershell
+    >     Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+    >     ```
+    >
+    >    The command should return **_True_** once Audit is active.
 
 You have successfully enabled auditing in Microsoft 365.
 
