@@ -11,7 +11,6 @@ Your task is to create and publish sensitivity labels within your organization t
 **Tasks**:
 
 1. Enable support for sensitivity labels  
-1. Migrate to the modern label scheme  
 1. Create a label group  
 1. Create a child label  
 1. Publish labels  
@@ -303,27 +302,7 @@ In this task, you'll create a service-side auto-labeling policy. Service-side au
 You have successfully created a service-side auto-labeling policy that will automatically apply the **Confidential Research Data** label to content stored or shared in SharePoint, Exchange, and OneDrive. It might take up to 24 hours for the policy to take effect.
 
 -->
-## Task 2 – Migrate to the modern label scheme
-
-With sensitivity label support enabled, you'll confirm that the tenant uses the modern label scheme. If it still uses the classic scheme, you'll migrate to the modern one to ensure new labels and policies use the latest configuration model.
-
-1. You should still be signed in to the Microsoft Purview portal as the Compliance Administrator.
-
-1. In the left navigation, select **Information Protection** > **Sensitivity labels**.
-
-1. On the **Sensitivity labels** page, review the information box for **Migrate to the modern label scheme**, then select **Get started**.
-
-1. In the **Migrate to the modern label scheme** flyout, review the summary to understand how existing labels and policies will be affected.
-
-1. At the bottom of the flyout, select **Migrate**.
-
-1. In the **Confirm migration to modern label scheme** dialog box, select **Confirm migration**.
-
-    > [!Note] **Note**: The migration process might take a few minutes to complete.
-
-You've successfully migrated your tenant to the modern sensitivity label scheme. New labels and policies you create will now use the modern configuration experience.
-
-## Task 3 – Create a label group
+## Task 2 – Create a label group
 
 In this task, you'll create a label group to organize internal sensitivity labels. Label groups act as containers for related labels, like department or business unit classifications.
 
@@ -352,7 +331,7 @@ In this task, you'll create a label group to organize internal sensitivity label
 
 You've created a label group for internal use. This group helps you manage related labels for specific departments or data categories.
 
-## Task 4 – Create a child label
+## Task 3 – Create a child label
 
 Now that you've created a label group, you'll add a child label for HR-related content. This label enforces encryption and content markings to protect HR data from unauthorized access.
 
@@ -409,7 +388,7 @@ Now that you've created a label group, you'll add a child label for HR-related c
 
 You've created a child label within the Internal label group. The label applies encryption and content markings to HR documents, making sensitive data easy to identify and protected by policy.
 
-## Task 5 – Publish labels
+## Task 4 – Publish labels
 
 Next, you'll publish the HR label from the Internal label group so users in the HR department can apply it to their documents.
 
@@ -455,7 +434,7 @@ Next, you'll publish the HR label from the Internal label group so users in the 
 
 You've published the Internal label group and its HR label so users can apply them to HR documents. It might take up to 24 hours for the policy to propagate across services.
 
-## Task 6 – Configure auto-labeling
+## Task 5 – Configure auto-labeling
 
 You'll now create a child label for financial data and configure it to apply automatically to content containing financial identifiers such as credit card or bank routing numbers.
 
@@ -536,4 +515,4 @@ You'll now create a child label for financial data and configure it to apply aut
 
 1. On the **Your auto-labeling policy was created** page, select **Done**.
 
-You’ve organized labels in a group, published them to users, and enabled auto-labeling so sensitive content is protected without relying on users.
+You've organized labels in a group, published them to users, and enabled auto-labeling so sensitive content is protected without relying on users.
