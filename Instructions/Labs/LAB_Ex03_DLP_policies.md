@@ -1,7 +1,12 @@
 ---
 lab:
-    task: 'Create a data loss prevention (DLP) policy'
-    exercise: 'Exercise 3 - Create a data loss prevention (DLP) policy'
+  task: Create a data loss prevention (DLP) policy
+  exercise: Exercise 3 - Create a data loss prevention (DLP) policy
+  title: Skilling Tasks
+  description: '**Tasks**:'
+  duration: 134 minutes
+  level: 100
+  islab: true
 ---
 
 # Skilling Tasks
