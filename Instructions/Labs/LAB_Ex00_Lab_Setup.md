@@ -1,7 +1,14 @@
 ---
 lab:
-    task: 'Prepare your environment for administration'
-    exercise: 'Exercise 0 - Prepare your environment for administration'
+  task: Prepare your environment for administration
+  exercise: Exercise 0 - Prepare your environment for administration
+  title: 'Lab Setup: Preparing Your Environment for Administration'
+  description: If you are being provided with a tenant as a part of an instructor-led
+    training delivery, please note that the tenant is made available for the purpose
+    of supporting the hands-on labs in the instructor-led training.
+  duration: 54 minutes
+  level: 200
+  islab: true
 ---
 
 ## WWL Tenants - Terms of use
