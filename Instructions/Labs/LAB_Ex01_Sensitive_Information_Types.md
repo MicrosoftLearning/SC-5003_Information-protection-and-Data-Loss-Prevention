@@ -1,7 +1,12 @@
 ---
 lab:
-    task: 'Create a custom sensitive information type'
-    exercise: 'Exercise 1 - Create a custom sensitive information type'
+  task: Create a custom sensitive information type
+  exercise: Exercise 1 - Create a custom sensitive information type
+  title: Skilling Task
+  description: In this task, you'll create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
+  duration: 48 minutes
+  level: 100
+  islab: true
 ---
 
 # Skilling Task
