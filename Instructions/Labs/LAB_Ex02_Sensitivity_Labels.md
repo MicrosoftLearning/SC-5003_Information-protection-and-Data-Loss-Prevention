@@ -1,7 +1,14 @@
 ---
 lab:
-    task: 'Create and publish a sensitivity label'
-    exercise: 'Exercise 2 - Create and publish a sensitivity label'
+  task: Create and publish a sensitivity label
+  exercise: Exercise 2 - Create and publish a sensitivity label
+  title: Skilling Tasks
+  description: Your task is to create and publish sensitivity labels within your organization
+    that classify and protect sensitive data according to its level of confidentiality
+    and the necessary access controls.
+  duration: 148 minutes
+  level: 200
+  islab: true
 ---
 
 # Skilling Tasks
