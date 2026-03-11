@@ -1,7 +1,12 @@
 ---
 lab:
-    task: 'Create and publish a sensitivity label'
-    exercise: 'Exercise 2 - Create and publish a sensitivity label'
+  task: Create and publish a sensitivity label
+  exercise: Exercise 2 - Create and publish a sensitivity label
+  title: Skilling Tasks
+  description: You've created a label group for internal use. This group helps you manage related labels for specific departments or data categories.
+  duration: 148 minutes
+  level: 200
+  islab: true
 ---
 
 # Skilling Tasks
