@@ -1,7 +1,12 @@
 ---
 lab:
-    task: 'Create a data loss prevention (DLP) policy'
-    exercise: 'Exercise 3 - Create a data loss prevention (DLP) policy'
+  task: Create a data loss prevention (DLP) policy
+  exercise: Exercise 3 - Create a data loss prevention (DLP) policy
+  title: Skilling Tasks
+  description: In this exercise, you'll create a data loss prevention (DLP) policy to protect sensitive data from being shared by users. The DLP policy that you create will inform your users if they want to share content that contains credit card information and allow them to provide a justification for sending this information. The policy will be implemented in simulation mode because you don't want the block action to affect your users yet.
+  duration: 134 minutes
+  level: 100
+  islab: true
 ---
 
 # Skilling Tasks
