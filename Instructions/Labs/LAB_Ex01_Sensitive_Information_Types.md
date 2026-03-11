@@ -1,7 +1,14 @@
 ---
 lab:
-    task: 'Create a custom sensitive information type'
-    exercise: 'Exercise 1 - Create a custom sensitive information type'
+  task: Create a custom sensitive information type
+  exercise: Exercise 1 - Create a custom sensitive information type
+  title: Skilling Task
+  description: Your task is to create and publish sensitivity labels within your organization
+    that classifies and protects sensitive data according to its level of confidentiality
+    and the necessary access controls.
+  duration: 48 minutes
+  level: 100
+  islab: true
 ---
 
 # Skilling Task
