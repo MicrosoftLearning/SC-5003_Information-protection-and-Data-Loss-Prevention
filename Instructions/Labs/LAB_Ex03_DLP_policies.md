@@ -1,10 +1,15 @@
 ---
 lab:
-    task: 'Create a data loss prevention (DLP) policy'
-    exercise: 'Exercise 3 - Create a data loss prevention (DLP) policy'
+  task: Create a data loss prevention (DLP) policy
+  exercise: Exercise 3 - Create a data loss prevention (DLP) policy
+  title: Create a data loss prevention (DLP) policy
+  description: Create, modify, and activate DLP policies using Microsoft Purview and PowerShell, including simulation mode and policy enforcement.
+  duration: 90 minutes
+  level: 200
+  islab: true
 ---
 
-# Skilling Tasks
+# Create a data loss prevention (DLP) policy
 
 **Tasks**:
 
