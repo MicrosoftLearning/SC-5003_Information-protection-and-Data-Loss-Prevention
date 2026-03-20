@@ -2,14 +2,14 @@
 lab:
   task: Create and publish a sensitivity label
   exercise: Exercise 2 - Create and publish a sensitivity label
-  title: Skilling Tasks
-  description: You've created a label group for internal use. This group helps you manage related labels for specific departments or data categories.
-  duration: 148 minutes
+  title: Create and publish a sensitivity label
+  description: Create and organize sensitivity labels, publish them to users, and configure auto-labeling to protect sensitive content.
+  duration: 90 minutes
   level: 200
   islab: true
 ---
 
-# Skilling Tasks
+# Create and publish a sensitivity label
 
 Your task is to create and publish sensitivity labels within your organization that classify and protect sensitive data according to its level of confidentiality and the necessary access controls.
 

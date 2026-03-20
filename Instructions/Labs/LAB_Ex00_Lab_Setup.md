@@ -1,7 +1,12 @@
 ---
 lab:
-    task: 'Prepare your environment for administration'
-    exercise: 'Exercise 0 - Prepare your environment for administration'
+  task: Prepare your environment for administration
+  exercise: Exercise 0 - Prepare your environment for administration
+  title: Prepare your environment for administration
+  description: Enable auditing, assign compliance roles, and explore the Microsoft Purview portal to prepare the environment for administration tasks.
+  duration: 45 minutes
+  level: 100
+  islab: true
 ---
 
 ## WWL Tenants - Terms of use
@@ -12,7 +17,7 @@ Tenants should not be shared or used for purposes outside of hands-on labs. The 
 
 Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
 
-# Lab Setup: Preparing Your Environment for Administration
+# Lab Setup: Preparing your environment for administration
 
 In this lab, you'll configure and prepare your environment for administration tasks. You'll activate necessary features, set up administrative permissions, and ensure proper configuration of key elements.
 
