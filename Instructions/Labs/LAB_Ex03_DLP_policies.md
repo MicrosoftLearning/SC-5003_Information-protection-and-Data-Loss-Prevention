@@ -28,7 +28,7 @@ In this exercise, you'll create a data loss prevention (DLP) policy to protect s
 
 1. On the left sidebar, select **Policies**.
 
-1. On the **Policies** page, select **+ Create policy**.
+1. On the **Policies** page, select **+ Create policy** to start the configuration for creating a new data loss prevention policy.
 
 1. In the **What info do you want to protect?** dialog, select **Enterprise applications & devices**.
 
