@@ -113,35 +113,44 @@ In this task, you'll assign the **Compliance Administrator** to the user you'll 
 
    > **Note:** If prompted to set up multifactor authentication (MFA), complete the setup using the available authentication method to continue with the lab.
 
-1. Expand **Users** in the left sidebar, then select **Active users**.
-
-1. Select or create a user to continue with these lab exercises.
-
-   If you choose to use an existing user, select a user with minimal rights for least access privilege.
-
-   1. If creating a new user, assign the user with a license that's appropriate for these lab exercises. The user must have a Microsoft 365 E5 license or compatible add-on for these exercises. Assign the user the **Compliance Administrator** role in the optional settings in the new user set up and finalize your new user creation.
-
-   1. If modifying the access of an existing user, select the user, then select **Manage roles**. Assign the user the **Compliance Administrator** role and save your changes.
-
-1. In the left navigation, expand **Users**, then select **Active users**.
+1. In the left navigation menu, expand **Users**, then select **Active users**.
 
 1. Select or create a user to continue with these lab exercises.
 
    If using an existing user, select a user with minimal rights for least access privilege.
 
 1. If creating a new user:
-   - Assign a license appropriate for these lab exercises (Microsoft 365 E5 license or a compatible add-on).
-   - In the optional settings, assign the **Compliance Administrator** role.
-   - Complete the user creation.
+
+   1. On the **Active users** page, select **+ Add a user**.
+
+   1. On the **Set up the basics** page, enter the required user details, then select **Next**.
+
+   1. On the **Assign product licenses** page, select a location, then assign a license (Microsoft 365 E5 license or a compatible add-on) if available.  
+   If no license is available, select **Create user without product license**, then select **Next**.
+
+   1. On the **Optional settings** page, expand the **Roles**, then select **Admin center access**.
+
+   1. Expand the **Show all by category**.
+
+   1. Under **Security & Compliance**, select **Compliance Administrator**.
+
+   1. Select **Next**.
+
+   1. On the **Review and finish** page, review the settings, then select **Finish adding** to complete the user creation.
 
 1. If modifying an existing user:
-   - Select the user, then select **Manage roles**.
-   - In the **Manage admin roles** page, select **Admin center access**.
-   - Expand **Show all by category**.
-   - In the **Security & Compliance** category, select **Compliance Administrator**.
-   - Select **Save changes**.
 
-1. Sign out of the account with the Global Administrator access by selecting their user icon in the top right, then select **Sign out**.
+   1. Select the user, then select **Manage roles**.
+
+   1. In the **Manage admin roles** page, select **Admin center access**.
+
+   1. Expand the **Show all by category**.
+
+   1. Under **Security & Compliance**, select **Compliance Administrator**.
+
+   1. Select **Save changes**.
+
+1. Sign out of the account with the Global Administrator access by selecting the user icon in the top-right corner, then select **Sign out**.
 
    Example:
 
