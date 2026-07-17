@@ -30,7 +30,9 @@ In this exercise, you'll create a data loss prevention (DLP) policy to protect s
 
 1. On the **Policies** page, select **+ Create policy** to start the configuration for creating a new data loss prevention policy.
 
-1. On the **Start with a template or create a custom policy** page, select **Custom** as the category, then select **Custom policy** under **Regulations**.
+1. In the **What info do you want to protect?** dialog, select **Enterprise applications & devices**.
+
+1. On the **Start with a template or create a custom policy** page, select **Custom**, then select **Custom policy** under **Regulations**.
 
 1. Select **Next**.
 
@@ -57,7 +59,7 @@ In this exercise, you'll create a data loss prevention (DLP) policy to protect s
 
 1. In the new **Content contains** area, select **Add**, then select **Sensitive info types**.
 
-1. On the **Sensitive info types** page, select **Credit Card Number** then select **Add**.
+1. On the **Sensitive info types** page, search for and select **`Credit Card Number`**, then select **Add**.
 
 1. Select **+ Add condition**, then select **Content is shared from Microsoft 365**.
 
@@ -67,7 +69,7 @@ In this exercise, you'll create a data loss prevention (DLP) policy to protect s
 
 1. In the new **Restrict access or encrypt the content in Microsoft 365 locations** area select **Block everyone.**
 
-1. Under **User notifications**, turn **On** the option for **Use notifications to inform your users and help educate them on the proper use of sensitive info.**, then select the checkbox to **Notify users in Office 365 service with a policy tip**.
+1. Under **User notifications**, turn **On** the option for **Use notifications to inform your users and help educate them on the proper use of sensitive info.**, then select the checkbox to **Notify users in Office 365 service with a policy tip or email notifications**.
 
 1. Under **User overrides** select the checkbox to **Allow users to override policy restrictions Fabric (including Power BI), Exchange, SharePoint, OneDrive and Teams.**
 
@@ -97,7 +99,7 @@ In this task, you'll modify the existing DLP policy created in the previous task
 
 1. You should still be on the **Policies** page in Microsoft Purview. If not, open **Microsoft Edge** and navigate to `https://purview.microsoft.com`. Select **Solutions** > **Data Loss Prevention** > **Policies**.
 
-1. On the **Policies** page select the checkbox for the recently created **Credit Card DLP Policy**, then select **Edit policy** to open the policy configuration.
+1. On the **Policies** page, select the checkbox for **Credit Card DLP Policy**, then select **Edit policy** (pencil icon) to open the policy configuration.
 
 1. On the **Name your DLP policy** page, select **Next**.
 
@@ -163,11 +165,13 @@ In this task, you'll activate the **Credit Card DLP Policy** you created in simu
 
 1. In **Microsoft Edge**, navigate to DLP policies by going to `https://purview.microsoft.com` > **Solutions** > **Data Loss Prevention** then select **Policies** from the left sidebar.
 
-1. On the  **Policies** page select the checkbox for the **Credit Card DLP Policy** and select **Edit policy** to open the policy configuration.
+1. On the **Policies** page, select the checkbox for **Credit Card DLP Policy**, then select **Edit policy** (pencil icon) to open the policy configuration.
 
 1. Select **Next** until you reach the **Policy mode** page and select **Turn the policy on immediately**.
 
-1. On the **Review and finish** select **Submit**.
+1. Select **Next**.
+
+1. On the **Review and finish** page, select **Submit**.
 
 1. On the **Policy updated** page select **Done**.
 
