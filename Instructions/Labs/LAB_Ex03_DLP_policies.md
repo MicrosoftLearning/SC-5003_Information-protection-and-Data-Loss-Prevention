@@ -171,7 +171,7 @@ In this task, you'll activate the **Credit Card DLP Policy** you created in simu
 
 1. Select **Next**.
 
-1. On the **Review and finish** select **Submit**.
+1. On the **Review and finish** page, select **Submit**.
 
 1. On the **Policy updated** page select **Done**.
 
