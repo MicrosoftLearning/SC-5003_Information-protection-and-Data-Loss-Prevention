@@ -107,9 +107,9 @@ You have successfully enabled auditing in Microsoft 365.
 
 ## Task 2 – Assign compliance roles
 
-In this task, you'll assign the **Compliance Administrator** to the user you'll be using for these lab exercises.
+In this task, you'll assign the **Compliance Administrator** role to the user you'll be using for these lab exercises.
 
-1. Open **Microsoft Edge** and navigate to the **Microsoft 365 admin center** at `https://admin.microsoft.com`. You'll need to login as a user that has **Global Administrator** rights.
+1. Open **Microsoft Edge** and navigate to the **Microsoft 365 admin center** at `https://admin.microsoft.com`. You'll need to log in as a user that has **Global Administrator** rights.
 
    > **Note:** If prompted to set up multifactor authentication (MFA), complete the setup using the available authentication method to continue with the lab.
 
@@ -160,7 +160,7 @@ You have successfully assigned a user the **Compliance Administrator** role, whi
 
 ## Task 3 – Explore the Microsoft Purview portal
 
-In this task, you'll sign in as the user you previously granted **Compliance Administrator** role to explore the Microsoft Purview portal. This role will be referred to as your **Compliance Administrator** in the next labs and exercises.
+In this task, you'll sign in as the user you previously granted the **Compliance Administrator** role to explore the Microsoft Purview portal. This role will be referred to as your **Compliance Administrator** in the next labs and exercises.
 
 1. In **Microsoft Edge**, navigate to **Microsoft Purview** portal at `https://purview.microsoft.com`.
 
@@ -168,6 +168,6 @@ In this task, you'll sign in as the user you previously granted **Compliance Adm
 
 1. When the **Sign in** window is displayed, sign in as the user you previously selected as the **Compliance Administrator**.
 
-1. Get yourself familiar with the new Microsoft Purview Portal. When you are done, leave the browser window open.
+1. Get yourself familiar with the new Microsoft Purview portal. When you are done, leave the browser window open.
 
 You have successfully switched to the **Compliance Administrator**'s account and are now ready to start the lab.
