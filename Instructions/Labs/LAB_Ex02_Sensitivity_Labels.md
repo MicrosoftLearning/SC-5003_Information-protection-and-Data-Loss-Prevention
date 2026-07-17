@@ -319,7 +319,7 @@ In this task, you'll create a label group to organize internal sensitivity label
 
 1. On the **Information Protection** page, on the left sidebar, select **Sensitivity labels**.
 
-1. On the **Sensitivity labels** page select **+ Create** > **Label group**.
+1. On the **Sensitivity labels** page, select **+ Create** > **Label group**.
 
    >**Note:**
    > If the **Label group** option is unavailable, migrate to the modern label schema:
