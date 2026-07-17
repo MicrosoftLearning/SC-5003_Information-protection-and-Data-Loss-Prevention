@@ -27,17 +27,17 @@ In this lab, you'll configure and prepare your environment for administration ta
 - Assign compliance roles
 - Explore the Microsoft Purview portal
 
-## Task – Enable Audit in the Microsoft Purview portal
+## Task 1 – Enable Audit in the Microsoft Purview portal
 
 In this task, you'll enable Audit in the Microsoft Purview portal to monitor portal activities.
 
 1. Log into Client 1 VM (SC-401-CL1) with the **Admin** account.
 
-1. Open Microsoft Edge.
+1. Open Microsoft Edge, navigate to **Microsoft Purview** portal at `https://purview.microsoft.com`.
 
-1. In **Microsoft Edge**, navigate to `https://purview.microsoft.com` and sign in as **MOD Administrator**, `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant prefix provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
-
-1. In Microsoft Edge, navigate to the Microsoft Purview portal, `https://purview.microsoft.com`, and log in.
+1. Sign in as **MOD Administrator**:  
+   - Username: `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant prefix provided by your lab hosting provider)  
+   - Password: Provided by your lab hosting provider
 
 1. A message about the new Microsoft Purview portal will appear on the screen. Select **Get started** to access the new portal.
 
@@ -45,13 +45,13 @@ In this task, you'll enable Audit in the Microsoft Purview portal to monitor por
 
 1. Select **Solutions** from the left sidebar, then select **Audit**.
 
-1. On the **Search** page, select the **Start recording user and admin activity** bar to enable audit logging.
+1. On the **Search** page, select the **Start recording user and admin activity** button to enable audit logging.
 
     ![Screenshot showing the Start recording user and admin activity button.](../Media/enable-audit-button.png)
 
 1. Once you select this option, the blue bar should disappear from this page.
 
-    >[!Note] **Note: If the Audit button doesn't enable logging**
+    > **Note:** If the Audit button doesn't enable logging
     >
     >In some tenants, selecting **Start recording user and admin activity** might not activate Audit.  
     >
@@ -105,23 +105,52 @@ In this task, you'll enable Audit in the Microsoft Purview portal to monitor por
 
 You have successfully enabled auditing in Microsoft 365.
 
-## Task – Assign compliance roles
+## Task 2 – Assign compliance roles
 
-In this task, you'll assign the **Compliance Admin** to the user you'll be using for these lab exercises.
+In this task, you'll assign the **Compliance Administrator** role to the user you'll be using for these lab exercises.
 
-1. Open **Microsoft Edge** and navigate to the Microsoft 365 admin center, `https://admin.microsoft.com`. You'll need to login as a user that has **Global Administrator** rights.
+1. Open **Microsoft Edge** and navigate to the **Microsoft 365 admin center** at `https://admin.microsoft.com`. You'll need to log in as a user that has **Global Administrator** rights.
 
-1. Expand **Users** in the left sidebar, then select **Active users**.
+   > **Note:** If prompted to set up multifactor authentication (MFA), complete the setup using the available authentication method to continue with the lab.
+
+1. In the left navigation menu, expand **Users**, then select **Active users**.
 
 1. Select or create a user to continue with these lab exercises.
 
-   If you choose to use an existing user, select a user with minimal rights for least access privilege.
+   If using an existing user, select a user with minimal rights for least access privilege.
 
-   1. If creating a new user, assign the user with a license that's appropriate for these lab exercises. The user must have an Microsoft 365 E5 license or compatible add-on for these exercises. Assign the user the **Compliance Administrator** role in the optional settings in the new user set up and finalize your new user creation.
+1. If creating a new user:
 
-   1. If modifying the access of an existing user, select the user, then select **Manage roles**. Assign the user the **Compliance Administrator** role and save your changes.
+   1. On the **Active users** page, select **+ Add a user**.
 
-1. Sign out of the account with the Global Administrator access by selecting their user icon in the top right, then select **Sign out**.
+   1. On the **Set up the basics** page, enter the required user details, then select **Next**.
+
+   1. On the **Assign product licenses** page, select a location, then assign a license (Microsoft 365 E5 license or a compatible add-on) if available.  
+   If no license is available, select **Create user without product license**, then select **Next**.
+
+   1. On the **Optional settings** page, expand the **Roles**, then select **Admin center access**.
+
+   1. Expand the **Show all by category**.
+
+   1. Under **Security & Compliance**, select **Compliance Administrator**.
+
+   1. Select **Next**.
+
+   1. On the **Review and finish** page, review the settings, then select **Finish adding** to complete the user creation.
+
+1. If modifying an existing user:
+
+   1. Select the user, then select **Manage roles**.
+
+   1. In the **Manage admin roles** page, select **Admin center access**.
+
+   1. Expand the **Show all by category**.
+
+   1. Under **Security & Compliance**, select **Compliance Administrator**.
+
+   1. Select **Save changes**.
+
+1. Sign out of the account with the Global Administrator access by selecting the user icon in the top-right corner, then select **Sign out**.
 
    Example:
 
@@ -129,16 +158,16 @@ In this task, you'll assign the **Compliance Admin** to the user you'll be using
 
 You have successfully assigned a user the **Compliance Administrator** role, which is required to perform the different exercises of this lab.
 
-## Task – Explore the Microsoft Purview portal
+## Task 3 – Explore the Microsoft Purview portal
 
-In this task, you'll sign in as the user you previously granted **Compliance Administrator** role to explore the Microsoft Purview portal. This role will be referred to as your **Compliance Administrator** in the next labs and exercises.
+In this task, you'll sign in as the user you previously granted the **Compliance Administrator** role to explore the Microsoft Purview portal. This role will be referred to as your **Compliance Administrator** in the next labs and exercises.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`**.
+1. In **Microsoft Edge**, navigate to **Microsoft Purview** portal at **`https://purview.microsoft.com`**.
 
 1. When the **Pick an account** window is displayed, select **Use another account**.
 
-1. When the **Sign in** window is displayed, sign in as the user you previous selected as the **Compliance Administrator**.
+1. When the **Sign in** window is displayed, sign in as the user you previously selected as the **Compliance Administrator**.
 
-1. Get yourself familiar with the new Microsoft Purview Portal. When you are done, leave the browser window open.
+1. Get yourself familiar with the new Microsoft Purview portal. When you are done, leave the browser window open.
 
 You have successfully switched to the **Compliance Administrator**'s account and are now ready to start the lab.
