@@ -317,9 +317,17 @@ In this task, you'll create a label group to organize internal sensitivity label
 
 1. In the Microsoft Purview portal, select **Solutions** from the left sidebar, then select **Information Protection**.
 
-1. On the **Microsoft Information Protection** page, on the left sidebar, select **Sensitivity labels**.
+1. On the **Information Protection** page, on the left sidebar, select **Sensitivity labels**.
 
-1. On the **Sensitivity labels** page select **+ Create** > **Label group**.
+1. On the **Sensitivity labels** page, select **+ Create** > **Label group**.
+
+   >**Note:**
+   > If the **Label group** option is unavailable, migrate to the modern label schema:
+   >
+   > - Select **Get started** in the **Migrate to the modern label schema** banner.
+   > - Select **Migrate**, then choose **Confirm migration**.
+   > - Wait for the migration to complete. The **Label group** option becomes available on the **Sensitivity labels** page.
+   > - Then select **+ Create** > **Label group**.
 
 1. The **New label group** configuration will start. On the **Provide basic details for this label group**, enter:
 
@@ -353,11 +361,11 @@ Now that you've created a label group, you'll add a child label for HR-related c
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select **Files** and **Emails**. If the checkbox for **Meetings** is selected, make sure it's deselected.
+1. On the **Define the scope for this label** page, select **Files & other data assets** and **Emails**. If the checkbox for **Meetings** is selected, make sure it's deselected.
 
 1. Select **Next**.
 
-1. On the **Choose protection settings for labeled items** page, select the **Control access** and **Apply content marking** options, then select **Next**.
+1. On the **Choose protection settings for the types of items you selected** page, select the **Control access** and **Apply content marking** options, then select **Next**.
 
 1. On the **Access control** page, select **Configure access control settings**.
 
@@ -373,7 +381,7 @@ Now that you've created a label group, you'll add a child label for HR-related c
 
 1. On the **Content marking** page, select the toggle to enable **Content marking**.
 
-1. For each of the following marking types, select the checkbox, then select the edit icon to enter the text:
+1. For each of the following marking types, select the checkbox, then select **Customize text**, enter the text, then select **Save**:
 
    |Marking type|Text|
    |:---|:---|
@@ -462,11 +470,11 @@ You'll now create a child label for financial data and configure it to apply aut
 
 1. Select **Next**.
 
-1. On the **Define the scope for this label** page, select **Files** and **Emails**. If the checkbox for **Meetings** is selected, make sure it's deselected.
+1. On the **Define the scope for this label** page, select **Files & other data assets** and **Emails**. If the checkbox for **Meetings** is selected, make sure it's deselected.
 
 1. Select **Next**.
 
-1. On the **Choose protection settings for labeled items** page, select **Next**.
+1. On the **Choose protection settings for the types of items you selected** page, select **Next**.
 
 1. On the **Auto-labeling for files and emails** page, set the **Auto-labeling for files and emails** to enabled.
 
@@ -510,7 +518,7 @@ You'll now create a child label for financial data and configure it to apply aut
 
 1. On the **Define rules for content in all locations** page, expand the rules for _Financial Data rule_ to ensure the expected rules are defined, then select **Next**.
 
-1. On the **Additional settings for email** page, select **Next**.
+1. On the **Additional label settings** page, select **Next**.
 
 1. On the **Decide if you want to test out the policy now or later** page, select **Run policy in simulation mode**, and select the checkbox for **Automatically turn on policy if not modified after 7 days in simulation.**
 
