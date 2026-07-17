@@ -36,7 +36,7 @@ In this task, you'll create a new custom sensitive information type that recogni
 
 1. Select **Next**.
 
-1. On the **Define patterns for this sensitive info type** page, select **Create pattern**.
+1. On the **Define patterns for this sensitive info type** page, select **+ Create pattern**.
 
 1. On the **New pattern** flyout panel on the right, select **+ Add primary element** > **Regular expression**.
 
@@ -44,7 +44,7 @@ In this task, you'll create a new custom sensitive information type that recogni
 
     - **ID**: `Contoso IDs`
     - **Regular expression**: `[A-Z]{3}[0-9]{6}`
-    - Select the radio button for *String match*
+    - Select the radio button for **String match**
 
 1. Select **Done** at the bottom of the flyout panel.
 
