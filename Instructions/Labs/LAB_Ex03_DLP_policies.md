@@ -59,7 +59,7 @@ In this exercise, you'll create a data loss prevention (DLP) policy to protect s
 
 1. In the new **Content contains** area, select **Add**, then select **Sensitive info types**.
 
-1. On the **Sensitive info types** page, select **`Credit Card Number`** then select **Add**.
+1. On the **Sensitive info types** page, search for and select **`Credit Card Number`**, then select **Add**.
 
 1. Select **+ Add condition**, then select **Content is shared from Microsoft 365**.
 
