@@ -162,7 +162,7 @@ You have successfully assigned a user the **Compliance Administrator** role, whi
 
 In this task, you'll sign in as the user you previously granted the **Compliance Administrator** role to explore the Microsoft Purview portal. This role will be referred to as your **Compliance Administrator** in the next labs and exercises.
 
-1. In **Microsoft Edge**, navigate to **Microsoft Purview** portal at `https://purview.microsoft.com`.
+1. In **Microsoft Edge**, navigate to **Microsoft Purview** portal at **`https://purview.microsoft.com`**.
 
 1. When the **Pick an account** window is displayed, select **Use another account**.
 
