@@ -99,7 +99,7 @@ In this task, you'll modify the existing DLP policy created in the previous task
 
 1. You should still be on the **Policies** page in Microsoft Purview. If not, open **Microsoft Edge** and navigate to `https://purview.microsoft.com`. Select **Solutions** > **Data Loss Prevention** > **Policies**.
 
-1. On the **Policies** page, select the checkbox for **Credit Card DLP Policy**, then select the **pencil** icon to edit the policy and open the configuration.
+1. On the **Policies** page, select the checkbox for **Credit Card DLP Policy**, then select **Edit policy** (pencil icon) to open the policy configuration.
 
 1. On the **Name your DLP policy** page, select **Next**.
 
@@ -165,7 +165,7 @@ In this task, you'll activate the **Credit Card DLP Policy** you created in simu
 
 1. In **Microsoft Edge**, navigate to DLP policies by going to `https://purview.microsoft.com` > **Solutions** > **Data Loss Prevention** then select **Policies** from the left sidebar.
 
-1. On the **Policies** page, select the checkbox for **Credit Card DLP Policy**, then select the **pencil** icon to edit the policy and open the configuration.
+1. On the **Policies** page, select the checkbox for **Credit Card DLP Policy**, then select **Edit policy** (pencil icon) to open the policy configuration.
 
 1. Select **Next** until you reach the **Policy mode** page and select **Turn the policy on immediately**.
 
