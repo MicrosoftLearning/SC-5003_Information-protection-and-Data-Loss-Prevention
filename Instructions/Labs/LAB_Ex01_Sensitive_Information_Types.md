@@ -21,7 +21,7 @@ Your task is to create and publish sensitivity labels within your organization t
 
 In this task, you'll create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign in to the Microsoft Purview portal as **testLabRunner**, which has the **Compliance Administrator** role.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign in to the Microsoft Purview portal as **testLabRunner** using the password `LabRunner!@920`. This account has the **Compliance Administrator** role.
 
 1. On the left sidebar, select **Solutions** then select **Information Protection**.
 

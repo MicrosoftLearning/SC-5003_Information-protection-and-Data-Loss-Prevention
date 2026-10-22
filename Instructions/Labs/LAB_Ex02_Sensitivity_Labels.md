@@ -25,7 +25,7 @@ Your task is to create and publish sensitivity labels within your organization t
 
 In this task, you'll enable co-authoring for sensitivity labels, which also enables sensitivity labels for files in SharePoint and OneDrive.
 
-1. Open **Microsoft Edge**, then navigate to `https://purview.microsoft.com` and sign in as **testLabRunner**, which has the **Compliance Administrator** role.
+1. Open **Microsoft Edge**, then navigate to `https://purview.microsoft.com` and sign in as **testLabRunner** using the password `LabRunner!@920`. This account has the **Compliance Administrator** role.
 
 1. In the left navigation, select **Settings** > **Information Protection**.
 

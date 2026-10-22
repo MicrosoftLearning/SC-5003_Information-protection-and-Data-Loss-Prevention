@@ -24,7 +24,7 @@ lab:
 
 In this exercise, you'll create a data loss prevention (DLP) policy to protect sensitive data from being shared by users. The DLP policy that you create will inform your users if they want to share content that contains credit card information and allow them to provide a justification for sending this information. The policy will be implemented in simulation mode because you don't want the block action to affect your users yet.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign in to the Microsoft Purview portal as **testLabRunner**, which has the **Compliance Administrator** role.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign in to the Microsoft Purview portal as **testLabRunner** using the password `LabRunner!@920`. This account has the **Compliance Administrator** role.
 
 1. Select **Solutions** from the left sidebar, then select **Data Loss Prevention**.
 
@@ -137,7 +137,7 @@ In this task, you'll use PowerShell to create a DLP policy to protect Contoso em
    Connect-IPPSSession
    ```
 
-1. Sign in as **testLabRunner** in the **Sign in to your account** pop-up window.
+1. Sign in as **testLabRunner** using the password `LabRunner!@920` in the **Sign in to your account** pop-up window.
 
 1. Run the **New-DlpCompliancePolicy** cmdlet to create a DLP policy that scans all Exchange mailboxes:
 

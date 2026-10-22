@@ -117,7 +117,7 @@ In this task, you'll assign the **Compliance Administrator** role to the user yo
 
    1. On the **Active users** page, select **+ Add a user**.
 
-   1. On the **Set up the basics** page, enter **testLabRunner** as the user name, complete the required user details, then select **Next**.
+   1. On the **Set up the basics** page, enter **testLabRunner** as the user name and complete the required user details. Select **Create password**, enter `LabRunner!@920`, clear the **Require this user to change their password when they first sign in** checkbox, then select **Next**.
 
    1. On the **Assign product licenses** page, select a location, then assign a license (Microsoft 365 E5 license or a compatible add-on) if available.  
    If no license is available, select **Create user without product license**, then select **Next**.
@@ -132,7 +132,11 @@ In this task, you'll assign the **Compliance Administrator** role to the user yo
 
    1. On the **Review and finish** page, review the settings, then select **Finish adding** to complete the user creation.
 
-1. If **testLabRunner** already exists, select it and modify its roles:
+1. If **testLabRunner** already exists, reset its password and modify its roles:
+
+   1. Select **testLabRunner**, then select **Reset password**.
+
+   1. Select **Let me create the password**, enter `LabRunner!@920`, clear the **Require this user to change their password when they first sign in** checkbox, then select **Reset password**.
 
    1. Select **testLabRunner**, then select **Manage roles**.
 
@@ -160,7 +164,7 @@ In this task, you'll sign in as **testLabRunner**, the user granted the **Compli
 
 1. When the **Pick an account** window is displayed, select **Use another account**.
 
-1. When the **Sign in** window is displayed, sign in as **testLabRunner**.
+1. When the **Sign in** window is displayed, sign in as **testLabRunner** using the password `LabRunner!@920`.
 
 1. Get yourself familiar with the new Microsoft Purview portal. When you are done, leave the browser window open.
 
