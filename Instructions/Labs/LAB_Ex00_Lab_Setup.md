@@ -111,15 +111,13 @@ In this task, you'll assign the **Compliance Administrator** role to the user yo
 
 1. In the left navigation menu, expand **Users**, then select **Active users**.
 
-1. Select or create a user to continue with these lab exercises.
+1. Check whether a user named **testLabRunner** already exists.
 
-   If using an existing user, select a user with minimal rights for least access privilege.
-
-1. If creating a new user:
+1. If **testLabRunner** does not exist, create it:
 
    1. On the **Active users** page, select **+ Add a user**.
 
-   1. On the **Set up the basics** page, enter the required user details, then select **Next**.
+   1. On the **Set up the basics** page, enter **testLabRunner** as the user name, complete the required user details, then select **Next**.
 
    1. On the **Assign product licenses** page, select a location, then assign a license (Microsoft 365 E5 license or a compatible add-on) if available.  
    If no license is available, select **Create user without product license**, then select **Next**.
@@ -134,9 +132,9 @@ In this task, you'll assign the **Compliance Administrator** role to the user yo
 
    1. On the **Review and finish** page, review the settings, then select **Finish adding** to complete the user creation.
 
-1. If modifying an existing user:
+1. If **testLabRunner** already exists, select it and modify its roles:
 
-   1. Select the user, then select **Manage roles**.
+   1. Select **testLabRunner**, then select **Manage roles**.
 
    1. In the **Manage admin roles** page, select **Admin center access**.
 
