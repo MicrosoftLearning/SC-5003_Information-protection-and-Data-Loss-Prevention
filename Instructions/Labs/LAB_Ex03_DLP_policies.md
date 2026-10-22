@@ -11,6 +11,8 @@ lab:
 
 # Create a data loss prevention (DLP) policy
 
+> **Prerequisite:** Complete [Exercise 1](LAB_Ex01_Sensitive_Information_Types.md) before Task 3. Task 3 uses the **Contoso Employee IDs** sensitive information type created in that exercise.
+
 **Tasks**:
 
 1. Create a DLP policy in simulation mode
@@ -22,7 +24,7 @@ lab:
 
 In this exercise, you'll create a data loss prevention (DLP) policy to protect sensitive data from being shared by users. The DLP policy that you create will inform your users if they want to share content that contains credit card information and allow them to provide a justification for sending this information. The policy will be implemented in simulation mode because you don't want the block action to affect your users yet.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as the user you selected to have **Compliance Administrator** rights.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign in to the Microsoft Purview portal as **testLabRunner**, which has the **Compliance Administrator** role.
 
 1. Select **Solutions** from the left sidebar, then select **Data Loss Prevention**.
 
@@ -95,7 +97,7 @@ You have now created a DLP policy that scans for credit card numbers in Microsof
 
 In this task, you'll modify the existing DLP policy created in the previous task to also scan emails for credit card information. This modification ensures that sensitive data is protected across more communication channels.
 
-1. You should still be logged into Microsoft 365 as the user you selected to be your **Compliance Administrator**.
+1. You should still be logged in to Microsoft 365 as **testLabRunner**.
 
 1. You should still be on the **Policies** page in Microsoft Purview. If not, open **Microsoft Edge** and navigate to `https://purview.microsoft.com`. Select **Solutions** > **Data Loss Prevention** > **Policies**.
 
@@ -135,7 +137,7 @@ In this task, you'll use PowerShell to create a DLP policy to protect Contoso em
    Connect-IPPSSession
    ```
 
-1. Sign in as the user you selected as your **Compliance Administrator** in the **Sign in to your account** pop-up window.
+1. Sign in as **testLabRunner** in the **Sign in to your account** pop-up window.
 
 1. Run the **New-DlpCompliancePolicy** cmdlet to create a DLP policy that scans all Exchange mailboxes:
 
@@ -161,7 +163,7 @@ You have successfully created a DLP policy using PowerShell that scans for Conto
 
 In this task, you'll activate the **Credit Card DLP Policy** you created in simulation mode so it enforces its protective actions.
 
-1. You should still be logged into Microsoft 365 as the user you selected as your **Compliance Administrator**.
+1. You should still be logged in to Microsoft 365 as **testLabRunner**.
 
 1. In **Microsoft Edge**, navigate to DLP policies by going to `https://purview.microsoft.com` > **Solutions** > **Data Loss Prevention** then select **Policies** from the left sidebar.
 

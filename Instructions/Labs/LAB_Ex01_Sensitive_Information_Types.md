@@ -21,7 +21,7 @@ Your task is to create and publish sensitivity labels within your organization t
 
 In this task, you'll create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as the user you set as the **Compliance Administrator** in a previous task.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign in to the Microsoft Purview portal as **testLabRunner**, which has the **Compliance Administrator** role.
 
 1. On the left sidebar, select **Solutions** then select **Information Protection**.
 
@@ -74,4 +74,4 @@ In this task, you'll create a new custom sensitive information type that recogni
 
 1. On the **Review settings and finish** page review the settings and select **Create**. When successfully created select **Done**.
 
-You have successfully created a new sensitive information type to identify employee IDs in the pattern of three uppercase characters, six numbers, and the keywords 'Employee' or 'IDs' within a range of 100 characters.
+You have successfully created a new sensitive information type to identify employee IDs in the pattern of three uppercase characters, six numbers, and the keywords 'Employee' and 'ID' within a range of 100 characters.

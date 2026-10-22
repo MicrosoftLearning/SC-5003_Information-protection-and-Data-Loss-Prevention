@@ -154,14 +154,14 @@ You have successfully assigned a user the **Compliance Administrator** role, whi
 
 ## Task 3 – Explore the Microsoft Purview portal
 
-In this task, you'll sign in as the user you previously granted the **Compliance Administrator** role to explore the Microsoft Purview portal. This role will be referred to as your **Compliance Administrator** in the next labs and exercises.
+In this task, you'll sign in as **testLabRunner**, the user granted the **Compliance Administrator** role, to explore the Microsoft Purview portal. This account will be used for the next labs and exercises.
 
 1. In **Microsoft Edge**, navigate to **Microsoft Purview** portal at **`https://purview.microsoft.com`**.
 
 1. When the **Pick an account** window is displayed, select **Use another account**.
 
-1. When the **Sign in** window is displayed, sign in as the user you previously selected as the **Compliance Administrator**.
+1. When the **Sign in** window is displayed, sign in as **testLabRunner**.
 
 1. Get yourself familiar with the new Microsoft Purview portal. When you are done, leave the browser window open.
 
-You have successfully switched to the **Compliance Administrator**'s account and are now ready to start the lab.
+You have successfully switched to the **testLabRunner** account, which has the **Compliance Administrator** role, and are now ready to start the lab.
