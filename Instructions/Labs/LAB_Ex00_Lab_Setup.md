@@ -32,7 +32,7 @@ In this lab, you'll configure and prepare your environment for administration ta
 In this task, you'll enable Audit in the Microsoft Purview portal to monitor portal activities.
 
 
-1. Open Microsoft Edge, navigate to **Microsoft Purview** portal at `https://purview.microsoft.com`.
+1. Open Microsoft Edge, navigate to **Microsoft Purview** portal at `https://purview.microsoft.com`, and sign in using the default administrator account whose user name starts with **LabRunnerProd**.
 
 
 1. A message about the new Microsoft Purview portal will appear on the screen. Select **Get started** to access the new portal.
@@ -77,7 +77,7 @@ In this task, you'll enable Audit in the Microsoft Purview portal to monitor por
     >     Connect-ExchangeOnline
     >     ```
     >
-    >    Sign in as `admin@WWLxZZZZZZ.onmicrosoft.com` (where ZZZZZZ is your unique tenant prefix provided by your lab hosting provider). Admin's password should be provided by your lab hosting provider.
+    >    Sign in using the default administrator account whose user name starts with **LabRunnerProd**. The password is provided by your lab hosting provider.
     >
     >1. Check if Audit is enabled:
     >
@@ -103,9 +103,9 @@ You have successfully enabled auditing in Microsoft 365.
 
 ## Task 2 – Assign compliance roles
 
-In this task, you'll assign the **Compliance Administrator** role to the user you'll be using for these lab exercises.
+In this task, you'll assign the **Compliance Administrator** role to the **testLabRunner** user.
 
-1. Open **Microsoft Edge** and navigate to the **Microsoft 365 admin center** at `https://admin.microsoft.com`. You'll need to log in as a user that has **Global Administrator** rights.
+1. Open **Microsoft Edge** and navigate to the **Microsoft 365 admin center** at `https://admin.microsoft.com`. Sign in using the default administrator account whose user name starts with **LabRunnerProd**, which has **Global Administrator** rights.
 
    > **Note:** If prompted to set up multifactor authentication (MFA), complete the setup using the available authentication method to continue with the lab.
 
@@ -148,17 +148,17 @@ In this task, you'll assign the **Compliance Administrator** role to the user yo
 
    1. Select **Save changes**.
 
-1. Sign out of the account with the Global Administrator access by selecting the user icon in the top-right corner, then select **Sign out**.
+1. Sign out of the default **LabRunnerProd** administrator account by selecting the user icon in the top-right corner, then select **Sign out**.
 
    Example:
 
-   ![Screenshot showing the navigation path to sign out of the MOD Administrator account.](../Media/sign-out.png)
+   ![Screenshot showing the navigation path to sign out of the LabRunnerProd administrator account.](../Media/sign-out.png)
 
-You have successfully assigned a user the **Compliance Administrator** role, which is required to perform the different exercises of this lab.
+You have successfully assigned the **Compliance Administrator** role to **testLabRunner**, which is used in the remaining labs.
 
 ## Task 3 – Explore the Microsoft Purview portal
 
-In this task, you'll sign in as **testLabRunner**, the user granted the **Compliance Administrator** role, to explore the Microsoft Purview portal. This account will be used for the next labs and exercises.
+In this task, you'll sign in as **testLabRunner**, the user granted the **Compliance Administrator** role, to explore the Microsoft Purview portal. Use this account for the next labs and exercises.
 
 1. In **Microsoft Edge**, navigate to **Microsoft Purview** portal at **`https://purview.microsoft.com`**.
 
@@ -168,4 +168,4 @@ In this task, you'll sign in as **testLabRunner**, the user granted the **Compli
 
 1. Get yourself familiar with the new Microsoft Purview portal. When you are done, leave the browser window open.
 
-You have successfully switched to the **testLabRunner** account, which has the **Compliance Administrator** role, and are now ready to start the lab.
+You are now ready to start the next lab using the **testLabRunner** account, which has the **Compliance Administrator** role.
