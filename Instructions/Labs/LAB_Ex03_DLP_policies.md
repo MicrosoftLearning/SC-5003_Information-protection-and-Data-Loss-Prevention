@@ -24,7 +24,7 @@ lab:
 
 In this exercise, you'll create a data loss prevention (DLP) policy to protect sensitive data from being shared by users. The DLP policy that you create will inform your users if they want to share content that contains credit card information and allow them to provide a justification for sending this information. The policy will be implemented in simulation mode because you don't want the block action to affect your users yet.
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign in to the Microsoft Purview portal as **testLabRunner** using the password `LabRunner!@920`. This account has the **Compliance Administrator** role.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and sign in to the Microsoft Purview portal as the timestamped lab user using the password `LabRunner!@920`. This account has the **Compliance Administrator** role.
 
 1. Select **Solutions** from the left sidebar, then select **Data Loss Prevention**.
 
@@ -97,7 +97,7 @@ You have now created a DLP policy that scans for credit card numbers in Microsof
 
 In this task, you'll modify the existing DLP policy created in the previous task to also scan emails for credit card information. This modification ensures that sensitive data is protected across more communication channels.
 
-1. You should still be logged in to Microsoft 365 as **testLabRunner**.
+1. You should still be logged in to Microsoft 365 as the timestamped lab user.
 
 1. You should still be on the **Policies** page in Microsoft Purview. If not, open **Microsoft Edge** and navigate to `https://purview.microsoft.com`. Select **Solutions** > **Data Loss Prevention** > **Policies**.
 
@@ -131,13 +131,13 @@ In this task, you'll use PowerShell to create a DLP policy to protect Contoso em
 
 1. Confirm the Untrusted repository security dialog with **Y** for Yes and press **Enter**.  This process may take some time to complete.
 
-1. Run the **Connect-IPPSSession** cmdlet with the full **testLabRunner** user principal name (UPN) that you noted during the lab setup to connect to Security & Compliance PowerShell. Replace `<tenant-domain>` with your tenant domain:
+1. Run the **Connect-IPPSSession** cmdlet with the full timestamped lab user UPN that you noted during the lab setup to connect to Security & Compliance PowerShell. Replace `<timestamped-lab-user-UPN>` with the complete UPN you recorded:
 
    ```powershell
-   Connect-IPPSSession -UserPrincipalName testLabRunner@<tenant-domain>
+   Connect-IPPSSession -UserPrincipalName <timestamped-lab-user-UPN>
    ```
 
-1. If the **Sign in to your account** window appears, verify that it shows the **testLabRunner** UPN, then sign in using the password `LabRunner!@920` and complete any required multifactor authentication.
+1. If the **Sign in to your account** window appears, verify that it shows the timestamped lab user UPN, then sign in using the password `LabRunner!@920` and complete any required multifactor authentication.
 
 1. Run the **New-DlpCompliancePolicy** cmdlet to create a DLP policy that scans all Exchange mailboxes:
 
@@ -163,7 +163,7 @@ You have successfully created a DLP policy using PowerShell that scans for Conto
 
 In this task, you'll activate the **Credit Card DLP Policy** you created in simulation mode so it enforces its protective actions.
 
-1. You should still be logged in to Microsoft 365 as **testLabRunner**.
+1. You should still be logged in to Microsoft 365 as the timestamped lab user.
 
 1. In **Microsoft Edge**, navigate to DLP policies by going to `https://purview.microsoft.com` > **Solutions** > **Data Loss Prevention** then select **Policies** from the left sidebar.
 

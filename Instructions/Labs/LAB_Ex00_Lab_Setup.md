@@ -103,60 +103,33 @@ You have successfully enabled auditing in Microsoft 365.
 
 ## Task 2 – Assign compliance roles
 
-In this task, you'll assign the **Compliance Administrator** role to the **testLabRunner** user.
+In this task, you'll create a unique lab user and assign the **Compliance Administrator** role to it. To prevent a previous lab run's authentication methods from being reused, append the current date and time to the user name.
 
 1. Open **Microsoft Edge** and navigate to the **Microsoft 365 admin center** at `https://admin.microsoft.com`. Sign in using the default administrator account whose user name starts with **LabRunnerProd**, which has **Global Administrator** rights.
 
    > **Note:** If prompted to set up multifactor authentication (MFA), complete the setup using the available authentication method to continue with the lab.
 
+1. Note the current date and time using the format `MMddHHmm`, then append it to `testLabRunner` to create a unique user name. For example, October 23 at 11:38 becomes **testLabRunner10231138**. Record this user name because you'll use the same account throughout the remaining labs.
+
 1. In the left navigation menu, expand **Users**, then select **Active users**.
 
-1. Check whether a user named **testLabRunner** already exists.
+1. On the **Active users** page, select **+ Add a user**.
 
-1. If **testLabRunner** does not exist, create it:
+1. On the **Set up the basics** page, enter the timestamped user name you recorded and complete the required user details. Select **Create password**, enter `LabRunner!@920`, clear the **Require this user to change their password when they first sign in** checkbox, then select **Next**.
 
-   1. On the **Active users** page, select **+ Add a user**.
+1. On the **Assign product licenses** page, select a location, then assign a license (Microsoft 365 E5 license or a compatible add-on) if available. If no license is available, select **Create user without product license**, then select **Next**.
 
-   1. On the **Set up the basics** page, enter **testLabRunner** as the user name and complete the required user details. Select **Create password**, enter `LabRunner!@920`, clear the **Require this user to change their password when they first sign in** checkbox, then select **Next**.
+1. On the **Optional settings** page, expand **Roles**, then select **Admin center access**.
 
-   1. On the **Assign product licenses** page, select a location, then assign a license (Microsoft 365 E5 license or a compatible add-on) if available.  
-   If no license is available, select **Create user without product license**, then select **Next**.
+1. Expand **Show all by category**.
 
-   1. On the **Optional settings** page, expand the **Roles**, then select **Admin center access**.
+1. Under **Security & Compliance**, select **Compliance Administrator**.
 
-   1. Expand the **Show all by category**.
+1. Select **Next**.
 
-   1. Under **Security & Compliance**, select **Compliance Administrator**.
+1. On the **Review and finish** page, review the settings, then select **Finish adding** to complete the user creation.
 
-   1. Select **Next**.
-
-   1. On the **Review and finish** page, review the settings, then select **Finish adding** to complete the user creation.
-
-1. If **testLabRunner** already exists, delete and recreate the user to remove authentication methods retained from an earlier lab run:
-
-   1. Select **testLabRunner**, select **Delete user**, and then confirm the deletion.
-
-   1. In the left navigation menu, expand **Users**, then select **Deleted users**.
-
-   1. Select **testLabRunner**, select **Permanently delete**, and then confirm the deletion.
-
-      > **Important:** Only permanently delete the **testLabRunner** account provided for this temporary lab environment. Do not use these steps for a production user or an account whose data must be retained.
-
-   1. Return to **Users** > **Active users**, then select **+ Add a user**.
-
-   1. On the **Set up the basics** page, enter **testLabRunner** as the user name and complete the required user details. Select **Create password**, enter `LabRunner!@920`, clear the **Require this user to change their password when they first sign in** checkbox, then select **Next**.
-
-   1. On the **Assign product licenses** page, select a location, then assign a license (Microsoft 365 E5 license or a compatible add-on) if available. If no license is available, select **Create user without product license**, then select **Next**.
-
-   1. On the **Optional settings** page, expand **Roles**, then select **Admin center access**.
-
-   1. Expand **Show all by category**.
-
-   1. Under **Security & Compliance**, select **Compliance Administrator**.
-
-   1. Select **Next**, review the settings, and then select **Finish adding**.
-
-1. On the **Active users** page, select **testLabRunner** and note its full user principal name (UPN), such as `testLabRunner@contoso.onmicrosoft.com`. You'll use this UPN when connecting to Security & Compliance PowerShell in a later exercise.
+1. On the **Active users** page, select the timestamped lab user and record its full user principal name (UPN), such as `testLabRunner10231138@contoso.onmicrosoft.com`. You'll use this UPN when connecting to Security & Compliance PowerShell in a later exercise.
 
 1. Sign out of the default **LabRunnerProd** administrator account by selecting the user icon in the top-right corner, then select **Sign out**.
 
@@ -164,18 +137,18 @@ In this task, you'll assign the **Compliance Administrator** role to the **testL
 
    ![Screenshot showing the navigation path to sign out of the LabRunnerProd administrator account.](../Media/sign-out.png)
 
-You have successfully assigned the **Compliance Administrator** role to **testLabRunner**, which is used in the remaining labs.
+You have successfully assigned the **Compliance Administrator** role to the timestamped lab user, which is used in the remaining labs.
 
 ## Task 3 – Explore the Microsoft Purview portal
 
-In this task, you'll sign in as **testLabRunner**, the user granted the **Compliance Administrator** role, to explore the Microsoft Purview portal. Use this account for the next labs and exercises.
+In this task, you'll sign in as the timestamped lab user granted the **Compliance Administrator** role to explore the Microsoft Purview portal. Use this account for the next labs and exercises.
 
 1. In **Microsoft Edge**, navigate to **Microsoft Purview** portal at **`https://purview.microsoft.com`**.
 
 1. When the **Pick an account** window is displayed, select **Use another account**.
 
-1. When the **Sign in** window is displayed, sign in as **testLabRunner** using the password `LabRunner!@920`.
+1. When the **Sign in** window is displayed, enter the full UPN of the timestamped lab user you recorded, then sign in using the password `LabRunner!@920`.
 
 1. Get yourself familiar with the new Microsoft Purview portal. When you are done, leave the browser window open.
 
-You are now ready to start the next lab using the **testLabRunner** account, which has the **Compliance Administrator** role.
+You are now ready to start the next lab using the timestamped lab user, which has the **Compliance Administrator** role.

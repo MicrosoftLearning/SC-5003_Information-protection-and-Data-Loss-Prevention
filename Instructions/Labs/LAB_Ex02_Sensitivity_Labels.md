@@ -25,7 +25,7 @@ Your task is to create and publish sensitivity labels within your organization t
 
 In this task, you'll enable co-authoring for sensitivity labels, which also enables sensitivity labels for files in SharePoint and OneDrive.
 
-1. Open **Microsoft Edge**, then navigate to `https://purview.microsoft.com` and sign in as **testLabRunner** using the password `LabRunner!@920`. This account has the **Compliance Administrator** role.
+1. Open **Microsoft Edge**, then navigate to `https://purview.microsoft.com` and sign in as the timestamped lab user using the password `LabRunner!@920`. This account has the **Compliance Administrator** role.
 
 1. In the left navigation, select **Settings** > **Information Protection**.
 
@@ -43,7 +43,7 @@ You have successfully enabled support for sensitivity labels for files in ShareP
 
 In this task, your HR department has requested a sensitivity label to apply to HR employee documents. You'll create a sensitivity label for internal documents and a sublabel for the HR department.
 
-1. Open **Microsoft Edge** and navigate to **`https://purview.microsoft.com`**. Sign in to Microsoft Purview as **testLabRunner**, which has the **Compliance Administrator** role.
+1. Open **Microsoft Edge** and navigate to **`https://purview.microsoft.com`**. Sign in to Microsoft Purview as the timestamped lab user, which has the **Compliance Administrator** role.
 
 1. In the Microsoft Purview portal, select **Solutions** from the left sidebar, then select **Information Protection**.
 
@@ -311,7 +311,7 @@ You have successfully created a service-side auto-labeling policy that will auto
 
 In this task, you'll create a label group to organize internal sensitivity labels. Label groups act as containers for related labels, like department or business unit classifications.
 
-1. You should still be signed in to the Microsoft Purview portal as **testLabRunner**.
+1. You should still be signed in to the Microsoft Purview portal as the timestamped lab user.
 
 1. In **Microsoft Edge**, navigate to `https://purview.microsoft.com`.
 
@@ -405,7 +405,7 @@ You've created a child label within the Internal label group. The label applies 
 
 Next, you'll publish the HR label from the Internal label group so users in the HR department can apply it to their documents.
 
-1. You should still be signed in to the Microsoft Purview portal as **testLabRunner**.
+1. You should still be signed in to the Microsoft Purview portal as the timestamped lab user.
 
 1. In **Microsoft Edge**, the Microsoft Purview portal tab should still be open. If not, navigate to **`https://purview.microsoft.com`** > **Solutions** > **Information Protection** > **Sensitivity labels**.
 
@@ -451,9 +451,9 @@ You've published the Internal label group and its HR label so users can apply th
 
 You'll now create a child label for financial data and configure it to apply automatically to content containing financial identifiers such as credit card or bank routing numbers.
 
-1. You should still be signed in to the Microsoft Purview portal as **testLabRunner**.
+1. You should still be signed in to the Microsoft Purview portal as the timestamped lab user.
 
-1. In **Microsoft Edge**, navigate to `https://purview.microsoft.com` and sign in to the Microsoft Purview portal as **testLabRunner** if prompted.
+1. In **Microsoft Edge**, navigate to `https://purview.microsoft.com` and sign in to the Microsoft Purview portal as the timestamped lab user if prompted.
 
 1. In the Microsoft Purview portal, select **Solutions** > **Information Protection** > **Sensitivity labels**.
 
