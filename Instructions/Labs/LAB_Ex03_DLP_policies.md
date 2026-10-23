@@ -131,13 +131,13 @@ In this task, you'll use PowerShell to create a DLP policy to protect Contoso em
 
 1. Confirm the Untrusted repository security dialog with **Y** for Yes and press **Enter**.  This process may take some time to complete.
 
-1. Run the **Connect-IPPSSession** cmdlet to connect to the Security & Compliance PowerShell:
+1. Run the **Connect-IPPSSession** cmdlet with the full **testLabRunner** user principal name (UPN) that you noted during the lab setup to connect to Security & Compliance PowerShell. Replace `<tenant-domain>` with your tenant domain:
 
    ```powershell
-   Connect-IPPSSession
+   Connect-IPPSSession -UserPrincipalName testLabRunner@<tenant-domain>
    ```
 
-1. Sign in as **testLabRunner** using the password `LabRunner!@920` in the **Sign in to your account** pop-up window.
+1. If the **Sign in to your account** window appears, verify that it shows the **testLabRunner** UPN, then sign in using the password `LabRunner!@920` and complete any required multifactor authentication.
 
 1. Run the **New-DlpCompliancePolicy** cmdlet to create a DLP policy that scans all Exchange mailboxes:
 

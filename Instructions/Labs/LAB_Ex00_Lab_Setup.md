@@ -132,21 +132,31 @@ In this task, you'll assign the **Compliance Administrator** role to the **testL
 
    1. On the **Review and finish** page, review the settings, then select **Finish adding** to complete the user creation.
 
-1. If **testLabRunner** already exists, reset its password and modify its roles:
+1. If **testLabRunner** already exists, delete and recreate the user to remove authentication methods retained from an earlier lab run:
 
-   1. Select **testLabRunner**, then select **Reset password**.
+   1. Select **testLabRunner**, select **Delete user**, and then confirm the deletion.
 
-   1. Select **Let me create the password**, enter `LabRunner!@920`, clear the **Require this user to change their password when they first sign in** checkbox, then select **Reset password**.
+   1. In the left navigation menu, expand **Users**, then select **Deleted users**.
 
-   1. Select **testLabRunner**, then select **Manage roles**.
+   1. Select **testLabRunner**, select **Permanently delete**, and then confirm the deletion.
 
-   1. In the **Manage admin roles** page, select **Admin center access**.
+      > **Important:** Only permanently delete the **testLabRunner** account provided for this temporary lab environment. Do not use these steps for a production user or an account whose data must be retained.
 
-   1. Expand the **Show all by category**.
+   1. Return to **Users** > **Active users**, then select **+ Add a user**.
+
+   1. On the **Set up the basics** page, enter **testLabRunner** as the user name and complete the required user details. Select **Create password**, enter `LabRunner!@920`, clear the **Require this user to change their password when they first sign in** checkbox, then select **Next**.
+
+   1. On the **Assign product licenses** page, select a location, then assign a license (Microsoft 365 E5 license or a compatible add-on) if available. If no license is available, select **Create user without product license**, then select **Next**.
+
+   1. On the **Optional settings** page, expand **Roles**, then select **Admin center access**.
+
+   1. Expand **Show all by category**.
 
    1. Under **Security & Compliance**, select **Compliance Administrator**.
 
-   1. Select **Save changes**.
+   1. Select **Next**, review the settings, and then select **Finish adding**.
+
+1. On the **Active users** page, select **testLabRunner** and note its full user principal name (UPN), such as `testLabRunner@contoso.onmicrosoft.com`. You'll use this UPN when connecting to Security & Compliance PowerShell in a later exercise.
 
 1. Sign out of the default **LabRunnerProd** administrator account by selecting the user icon in the top-right corner, then select **Sign out**.
 
