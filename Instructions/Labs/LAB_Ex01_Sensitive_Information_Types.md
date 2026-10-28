@@ -21,7 +21,7 @@ Your task is to create and publish sensitivity labels within your organization t
 
 In this task, you'll create a new custom sensitive information type that recognizes the pattern of employee IDs near the keywords "Employee" and "ID".
 
-1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log into the Microsoft Purview portal as the user you set as the **Compliance Administrator** in a previous task.
+1. In **Microsoft Edge**, navigate to **`https://purview.microsoft.com`** and log in to the Microsoft Purview portal as the user you set as the **Compliance Administrator** in a previous task.
 
 1. On the left sidebar, select **Solutions** then select **Information Protection**.
 
@@ -40,7 +40,7 @@ In this task, you'll create a new custom sensitive information type that recogni
 
 1. On the **New pattern** flyout panel on the right, select **+ Add primary element** > **Regular expression**.
 
-1. On the **+ Add a regular expression​** flyout panel on the right, enter:
+1. On the **Add a regular expression​** flyout panel on the right, enter:
 
     - **ID**: `Contoso IDs`
     - **Regular expression**: `[A-Z]{3}[0-9]{6}`
