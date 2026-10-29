@@ -31,8 +31,6 @@ In this lab, you'll configure and prepare your environment for administration ta
 
 In this task, you'll enable Audit in the Microsoft Purview portal to monitor portal activities.
 
-1. Log into Client 1 VM (SC-401-CL1) with the **Admin** account.
-
 1. Open Microsoft Edge, navigate to **Microsoft Purview** portal at `https://purview.microsoft.com`.
 
 1. Sign in as **MOD Administrator**:  
